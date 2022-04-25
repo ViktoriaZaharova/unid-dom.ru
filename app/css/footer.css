@@ -1,0 +1,106 @@
+/*==========  footer  ==========*/
+footer {
+  padding: 75px 0 35px;
+  color: #fff;
+  background: #1B1B1C; }
+  footer .logo {
+    margin: 0 0 30px;
+    max-width: 168px; }
+  footer .phone {
+    color: #fff;
+    font-weight: bold;
+    margin: 0 0 10px;
+    font-size: 16px; }
+    footer .phone:hover {
+      color: #F06E28; }
+
+.document-text {
+  font-size: 14px;
+  max-width: 200px;
+  line-height: 1.4; }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.menu-footer {
+  font-size: 18px; }
+  .menu-footer li a {
+    color: #fff;
+    position: relative;
+    padding: 6px 0; }
+    .menu-footer li a:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+      opacity: 0;
+      background: #6B6B6B; }
+    .menu-footer li a:hover:before {
+      width: 100%;
+      opacity: 1; }
+
+.footer-box {
+  margin: 0 0 35px;
+  position: relative;
+  padding: 0 0 0 35px;
+  font-size: 14px;
+  line-height: 1.4; }
+  .footer-box__icon {
+    fill: #fff;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 0;
+    top: 0; }
+  .footer-box:last-child {
+    margin: 0; }
+  .footer-box h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 10px; }
+
+.address {
+  max-width: 250px; }
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .list-social li {
+    margin: 0 12px 0 0; }
+    .list-social li:last-child {
+      margin: 0; }
+    .list-social li a {
+      width: 30px;
+      height: 30px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      fill: #fff; }
+
+/*==========  footer end  ==========*/
+/*==========  section  ==========*/
+/*==========  section end  ==========*/

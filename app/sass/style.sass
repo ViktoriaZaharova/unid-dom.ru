@@ -1,0 +1,185 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: #1B1B1C
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0
+  box-sizing: border-box
+  font-family: $default-font
+  border: none
+    radius: 0
+  width: 100%
+
+  &:hover
+    outline: none
+    box-shadow: none
+
+
+label
+  display: block
+  width: 100%
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+    radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 11px 22px
+  font-weight: 500
+  border-radius: 4px
+
+
+.btn-accent
+  color: #fff
+  background: $accent
+  &:hover
+    background: $green
+    color: #fff
+
+.btn-black
+  color: #fff
+  background: #1b1b1c
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn-fixed
+  position: fixed
+  left: 50%
+  bottom: 0
+  transform: translate(-50%, 0)
+  z-index: 3
+  text-transform: uppercase
+
+.btn-scroll-top
+  position: fixed
+  z-index: 3
+  width: 35px
+  height: 35px
+  right: 50px
+  bottom: 30px
+  opacity: .8
+  padding: 0
+  &:hover
+    opacity: 1
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+strong, b
+  font-weight: bold
+  display: inline-block
+
+.my-ul
+  list-style: none
+
+.container
+  max-width: 1200px
+
+.color-accent
+  color: $accent
+
+h1
+  width: 100%
+  font-size: 56px
+  max-width: 710px
+
+h2
+  width: 100%
+  font-weight: bold
+  font-size: 48px
+  margin: 0 auto 20px
+
+.subtitle
+  font-size: 40px
+  font-weight: bold
+  max-width: 700px
+  margin: 30px 0 20px
