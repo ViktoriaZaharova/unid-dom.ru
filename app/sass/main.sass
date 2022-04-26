@@ -25,12 +25,12 @@
   width: 100%
   border-radius: 20px
   background: rgba(0, 0, 0, 0.54)
-  box-shadow: 0px 0px 25px #000000
+  box-shadow: 0 0 25px #000000
   p
     font-size: 22px
   .btn
     margin: 40px 0 auto 40px
-    padding: 16px 30px
+
 
 .description-text
   margin: 20px 0
@@ -50,64 +50,57 @@
 /*==========  section home end  ==========*/
 
 
+/*==========  section about-product ==========*/
+.about-product
+  padding: 120px 0 100px
 
-/*==========  section  ==========*/
+.about-product__img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 50px 0 0
+  overflow: hidden
+  img
+    width: 100%
+    transition: 1s ease
+  &:hover
+    img
+      transform: scale(1.05, 1.05)
 
-/*==========  section end  ==========*/
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
+/*==========  section about-product end  ==========*/
 
 
 
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
+/*==========  section callback-prices ==========*/
+.callback-prices
+  padding: 30px 0 40px
+  background: url("../img/bg2.jpg") no-repeat center
+    size: cover
+  color: #fff
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    opacity: .52
+    background: #0c0f14
+  .btn
+    margin: 30px auto 0
+  h2
+    font-size: 32px
+/*==========  section callback-prices end  ==========*/
 
 
 
 /*==========  section  ==========*/
 
 /*==========  section end  ==========*/
+
 
 /*==========  section  ==========*/
 
@@ -119,15 +112,309 @@
 
 /*==========  section end  ==========*/
 
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
 /*==========  section  ==========*/
 
 /*==========  section end  ==========*/
 
 
 
-/*==========  section  ==========*/
+/*==========  section book-departure ==========*/
+.book-departure
+  position: relative
+  background: url("../img/bg4.jpg") no-repeat center
+    size: cover
+  z-index: 1
+  padding: 40px 0 10px
+  h2
+    font-size: 34px
+    font-weight: normal
+    margin: 0 auto 50px
+    span
+      display: block
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: -1
+    background: linear-gradient(to bottom,#fafafa 0,rgba(250,250,250,.76) 50%,transparent 105%)
+  .warranty-content
+    padding: 50px
+    ul
+      font-size: 25px
+      li
+        margin: 0 0 10px
+    h3
+      margin: 0 0 20px
+      font-weight: bold
+      font-size: 30px
+      text-align: center
 
-/*==========  section end  ==========*/
+.call-box
+  background: #fff
+  padding: 30px 30px 40px
+  border-radius: 5px
+  max-width: 400px
+  h3
+    font-size: 32px
+    margin: 0 0 20px
+    line-height: 1.5
+
+.form
+  button
+    width: 100%
+
+/*==========  section book-departure end  ==========*/
+
+
+/*==========  section projects ==========*/
+.projects
+  padding: 70px 0 20px
+  h3
+    font-size: 22px
+    line-height: 1.37
+    max-width: 700px
+    margin: 0 auto
+
+.projects-box
+  width: 100%
+  height: 100%
+  text-align: center
+  background: #fff
+  &__img
+    width: 100%
+    height: 247px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      transition: 1s ease
+    &:hover
+      img
+        transform: scale(1.05, 1.05)
+  &__body
+    padding: 10px 30px 40px
+  .btn
+    margin: 30px auto 0
+  h4
+    font-weight: 700
+    font-size: 22px
+    margin: 0 auto 20px
+  .box-text
+    p
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+
+/*==========  section projects end  ==========*/
+
+
+
+/*==========  section reviews ==========*/
+.reviews
+  h2
+    margin: 0 auto 50px
+
+.reviews-box
+  padding: 30px
+  background: $black
+  color: #fff
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  &__content
+    margin: 0 0 40px
+  &__footer
+    display: flex
+    align-items: center
+    margin: auto 0 0
+  &__avatar
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    width: 60px
+    height: 60px
+    min-width: 60px
+    margin: 0 10px 0 0
+  h4
+    font-size: 18px
+    font-weight: bold
+
+
+.bg-grey
+  background: #f5f5f5
+  color: $black
+
+.btn-all
+  margin: 40px auto 0
+/*==========  section reviews end  ==========*/
+
+/*==========  section warranty ==========*/
+.warranty
+  padding: 70px 0
+  background: url("../img/bg5.jpg") no-repeat center
+    size: cover
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #F5F5F5
+    opacity: .90
+  h2
+    font-size: 25px
+    line-height: 1.37
+    padding: 0 0 30px
+    border-bottom: 1px solid #D5D8D2
+    text-align: center
+
+.warranty-content
+  padding: 30px
+
+.warranty-image
+  display: flex
+  align-items: center
+  justify-content: center
+
+
+/*==========  section warranty end  ==========*/
+
+
+
+/*==========  section payment-service ==========*/
+.payment-service
+  padding: 70px 0 10px
+  h3
+    font-size: 22px
+    line-height: 1.37
+    margin: 0 auto 30px
+
+.payment-service-box
+  margin: 35px 0 35px
+  width: 100%
+  text-align: center
+  min-height: 270px
+  &__icon
+    padding: 15px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto
+    width: 80px
+    height: 80px
+    background: $black
+  h4
+    font-weight: bold
+    margin: 20px auto 30px
+    font-size: 22px
+  a
+    display: inline-block
+
+/*==========  section payment-service end  ==========*/
+
+
+
+/*==========  section advantages ==========*/
+.advantages
+  position: relative
+  background: url("../img/bg5.jpg") no-repeat center
+    size: cover
+  z-index: 1
+  padding: 70px 0 30px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #f5f5f5
+    opacity: .9
+
+.advantages-box
+  background: #fff
+  width: 100%
+  height: 100%
+  padding: 30px 30px 60px
+  text-align: center
+  min-height: 420px
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 20px
+    max-width: 100px
+    width: 100%
+  h3
+    font-weight: bold
+    font-size: 22px
+    line-height: 1.37
+    min-height: 80px
+  .box-text
+    padding: 20px 0 0
+    width: 100%
+    border-top: 1px solid #E9E9E9
+
+
+/*==========  section advantages end  ==========*/
+
+
+
+/*==========  section why-company ==========*/
+.why-company
+  h2
+    margin: 0 auto 20px
+
+.why-company-box
+  text-align: center
+  margin: 45px 0 0
+  .box-text
+    color: #878788
+  h3
+    font-size: 22px
+    font-weight: bold
+    line-height: 1.37
+    margin: 0 auto 20px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    background: #545455
+    margin: 0 auto 30px
+    width: 60px
+    height: 60px
+    border-radius: 50%
+    font-size: 30px
+    font-weight: bold
+
+/*==========  section why-company end  ==========*/
 
 /*==========  section contacts ==========*/
 .contacts

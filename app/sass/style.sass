@@ -73,21 +73,32 @@ input, textarea, select
   outline: none
   box-shadow: none
   appearance: none
-  padding: 0
+  padding: 0 12px
   box-sizing: border-box
   font-family: $default-font
-  border: none
-    radius: 0
+  border: 1px solid rgba(27,27,28,.15)
+    radius: 5px
   width: 100%
-
+  height: 47px
+  color: #1b1b1c
+  &::placeholder
+    color: #1b1b1c
   &:hover
     outline: none
     box-shadow: none
+
+.input-title
+  display: block
+  width: 100%
+  font-size: 15px
+  margin: 0 0 10px
+  font-weight: 500
 
 
 label
   display: block
   width: 100%
+  margin: 0 0 20px
 
 button, .btn
   outline: none
@@ -98,7 +109,7 @@ button, .btn
   padding: 0
   margin: 0
   border: none
-    radius: 0
+    radius: 5px
 
   &:hover, &:focus
     outline: none
@@ -114,6 +125,8 @@ button, .btn
   font-weight: 500
   border-radius: 4px
 
+.btn-lg
+  padding: 16px 30px
 
 .btn-accent
   color: #fff
@@ -121,6 +134,10 @@ button, .btn
   &:hover
     background: $green
     color: #fff
+
+.btn-submit
+  background: #FC5F01
+
 
 .btn-black
   color: #fff
@@ -167,6 +184,13 @@ strong, b
 .color-accent
   color: $accent
 
+.color-red
+  color: #dd4b39
+
+.bg-white
+  background: #fff
+  color: #545455
+
 h1
   width: 100%
   font-size: 56px
@@ -178,8 +202,40 @@ h2
   font-size: 48px
   margin: 0 auto 20px
 
+.title-decor
+  padding: 0 0 0 30px
+  border-left: 2px solid $black
+  font-family: $title-font
+  font-size: 48px
+  font-weight: 500
+  margin: 0
+
 .subtitle
   font-size: 40px
   font-weight: bold
   max-width: 700px
   margin: 30px 0 20px
+
+.box-text
+  line-height: 1.5
+  font-size: 16px
+
+.p-70
+  padding: 70px 0
+
+.mt-50
+  margin-top: 50px
+
+.mb-50
+  margin-bottom: 50px
+
+.list-dots
+  padding-left: 1.75em
+  list-style: disc
+  font-size: 20px
+  line-height: 1.5
+  li
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+

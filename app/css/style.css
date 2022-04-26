@@ -72,21 +72,39 @@ input, textarea, select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  padding: 0;
+  padding: 0 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  border: none;
-    border-radius: 0;
-  width: 100%; }
+  border: 1px solid rgba(27, 27, 28, 0.15);
+    border-radius: 5px;
+  width: 100%;
+  height: 47px;
+  color: #1b1b1c; }
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+    color: #1b1b1c; }
+  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+    color: #1b1b1c; }
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+    color: #1b1b1c; }
+  input::placeholder, textarea::placeholder, select::placeholder {
+    color: #1b1b1c; }
   input:hover, textarea:hover, select:hover {
     outline: none;
     -webkit-box-shadow: none;
             box-shadow: none; }
 
+.input-title {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  margin: 0 0 10px;
+  font-weight: 500; }
+
 label {
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin: 0 0 20px; }
 
 button, .btn {
   outline: none;
@@ -99,7 +117,7 @@ button, .btn {
   padding: 0;
   margin: 0;
   border: none;
-    border-radius: 0; }
+    border-radius: 5px; }
   button:hover, button:focus, .btn:hover, .btn:focus {
     outline: none;
     -webkit-box-shadow: none;
@@ -120,12 +138,18 @@ button, .btn {
   font-weight: 500;
   border-radius: 4px; }
 
+.btn-lg {
+  padding: 16px 30px; }
+
 .btn-accent {
   color: #fff;
   background: #F06E28; }
   .btn-accent:hover {
     background: #8da63d;
     color: #fff; }
+
+.btn-submit {
+  background: #FC5F01; }
 
 .btn-black {
   color: #fff;
@@ -173,6 +197,13 @@ strong, b {
 .color-accent {
   color: #F06E28; }
 
+.color-red {
+  color: #dd4b39; }
+
+.bg-white {
+  background: #fff;
+  color: #545455; }
+
 h1 {
   width: 100%;
   font-size: 56px;
@@ -184,8 +215,39 @@ h2 {
   font-size: 48px;
   margin: 0 auto 20px; }
 
+.title-decor {
+  padding: 0 0 0 30px;
+  border-left: 2px solid #1B1B1C;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0; }
+
 .subtitle {
   font-size: 40px;
   font-weight: bold;
   max-width: 700px;
   margin: 30px 0 20px; }
+
+.box-text {
+  line-height: 1.5;
+  font-size: 16px; }
+
+.p-70 {
+  padding: 70px 0; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.mb-50 {
+  margin-bottom: 50px; }
+
+.list-dots {
+  padding-left: 1.75em;
+  list-style: disc;
+  font-size: 20px;
+  line-height: 1.5; }
+  .list-dots li {
+    margin: 0 0 30px; }
+    .list-dots li:last-child {
+      margin: 0; }
