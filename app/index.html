@@ -19,6 +19,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/twentytwenty.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -33,45 +34,53 @@
 <header>
   <div class="container">
     <div class="row">
-      <div class="col-12 d-flex flex-wrap align-items-center">
+      <div class="col-12 d-flex align-items-center">
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
-        <ul class="menu my-ul">
-          <li><a href="#works" class="go_to">Наши работы</a></li>
-          <li><a href="#advantages" class="go_to">Преимущества</a></li>
-          <li><a href="#reviews" class="go_to">Отзывы</a></li>
-          <li><a href="#contacts" class="go_to">Контакты</a></li>
-        </ul>
+        <div class="header-wrapper">
+          <ul class="menu my-ul">
+            <li><a href="#works" class="go_to">Наши работы</a></li>
+            <li><a href="#advantages" class="go_to">Преимущества</a></li>
+            <li><a href="#reviews" class="go_to">Отзывы</a></li>
+            <li><a href="#contacts" class="go_to">Контакты</a></li>
+          </ul>
 
-        <div class="header-box">
-          <a href="tel:+7 (812) 612-92-26" class="phone">
-            <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
-            <span class="phone-text">+7 (812) 612-92-26</span>
-          </a>
-          <div class="schedule">С 9 утра до 9 вечера</div>
+          <div class="header-box">
+            <a href="tel:+7 (812) 612-92-26" class="phone">
+              <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
+              <span class="phone-text">+7 (812) 612-92-26</span>
+            </a>
+            <div class="schedule">С 9 утра до 9 вечера</div>
+          </div>
+
+          <ul class="list-social my-ul">
+            <li><a href="viber://contact?number=+7 (981) 800-34-67">
+              <svg class="svg-icon">
+                <use xlink:href="img/social.svg#viber"></use>
+              </svg>
+            </a></li>
+            <li><a href="whatsapp://send?phone=+7 (981) 800-34-67">
+              <svg class="svg-icon">
+                <use xlink:href="img/social.svg#whatsapp"></use>
+              </svg>
+            </a></li>
+            <li><a href="https://vk.com/septik_unid">
+              <svg class="svg-icon">
+                <use xlink:href="img/social.svg#vk2"></use>
+              </svg>
+            </a></li>
+            <li><a href="https://www.youtube.com/channel/UCIWaLehVkXwUbuYDB9UWgKg">
+              <svg class="svg-icon">
+                <use xlink:href="img/social.svg#yt"></use>
+              </svg>
+            </a></li>
+          </ul>
         </div>
 
-        <ul class="list-social my-ul">
-          <li><a href="viber://contact?number=+7 (981) 800-34-67">
-            <svg class="svg-icon">
-              <use xlink:href="img/social.svg#viber"></use>
-            </svg>
-          </a></li>
-          <li><a href="whatsapp://send?phone=+7 (981) 800-34-67">
-            <svg class="svg-icon">
-              <use xlink:href="img/social.svg#whatsapp"></use>
-            </svg>
-          </a></li>
-          <li><a href="https://vk.com/septik_unid">
-            <svg class="svg-icon">
-              <use xlink:href="img/social.svg#vk2"></use>
-            </svg>
-          </a></li>
-          <li><a href="https://www.youtube.com/channel/UCIWaLehVkXwUbuYDB9UWgKg">
-            <svg class="svg-icon">
-              <use xlink:href="img/social.svg#yt"></use>
-            </svg>
-          </a></li>
-        </ul>
+        <div class="btn-burger no-click">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </div>
   </div>
@@ -140,35 +149,245 @@
 </section>
 <!--### SECTION callback-prices END ###-->
 
-<!--### SECTION  ###-->
-<section class="">
+<!--### SECTION advantages-product ###-->
+<section class="advantages-product p-70">
   <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="advantages-product-wrapper">
+          <h3>Гарантия на дренажную трубу
+            <span class="color-accent">50 лет</span></h3>
+          <h3>Гарантия на монтажные работы
+            <span class="color-accent">36 месяцев</span></h3>
+          <div class="box-text"><p>Всё закреплено в договоре.</p></div>
+          <div class="img-icon"><img src="img/image2.webp" alt=""></div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="question-wrapper">
+          <h2>Почему дренаж лучше делать сейчас и как снизить стоимость проекта на <span class="color-accent">20%</span>?
+          </h2>
 
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne" data-toggle="collapse"
+                   data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Скорость работы выше
+
+                <div class="accordion-icon"></div>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>При сухой погоде и с сухим грунтом намного проще работать. Поэтому скорость работы значительно
+                    увеличивается и <span class="color-accent">конечная стоимость работ для заказчика ниже.</span></p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header collapsed" id="headingTwo" data-toggle="collapse"
+                   data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Деформация ландшафта меньше
+                <div class="accordion-icon"></div>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>При заезде на участок техники(при необходимости), когда грунт влажный, часто страдает ландшафт в
+                    виде
+                    газона. При сухой погоде ущерба газону и участку намного меньше.</p>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header collapsed" id="headingThree" data-toggle="collapse"
+                   data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Грязи на участке меньше
+                <div class="accordion-icon"></div>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>Так как работа связана с выемкой грунта, то побочным явлением является грязь на участке. При работе
+                    с
+                    сухим грунтом грязи значительно меньше остается после выполнения работ.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header collapsed" id="headingFour" data-toggle="collapse"
+                   data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Фиксирование минимальной текущей цены
+                <div class="accordion-icon"></div>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                  <p>В связи с курсом рубля, цены на сырьё, материалы и оборудование регулярно растут. Поэтому чем
+                    раньше
+                    заключить договор на поставку и монтаж дренажной системы, тем <span class="color-accent">меньше заплатить за итоговый проект дренажа.</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
-<!--### SECTION END ###-->
+<!--### SECTION advantages-product END ###-->
 
-<!--### SECTION  ###-->
-<section class="">
+
+<!--### SECTION book-departure ###-->
+<div class="book-departure book-departure-v2">
   <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <a href="#" class="btn btn-accent btn-lg m-40">Заказать бесплатный расчёт</a>
+      </div>
+      <div class="col-12 text-center">
+        <h2>В Ленобласти часто встречаются сложные грунты:</h2>
+        <h5><strong>глинистая почва, болотный грунт, плывун, высокий уровень грунтовых вод и др.</strong></h5>
+        <div class="box-text">
+          <p>Инженеры "Юнид Эко" учтет все особенности и разработает схему укладки дренажа таким образом, чтобы дрежа
+            прослужил вам от 50 лет без луж на участке и подтопленных сооружений.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-7">
+        <div class="warranty-content">
+          <h3>В зависимости от типа грунта инженер определит:</h3>
+          <ul class="list-dots my-ul">
+            <li>Схему укладки дренажной системы</li>
+            <li>Уровень грунтовых вод</li>
+            <li>Варианты отвода воды с участка</li>
+            <li>Рассчитает объем расходных материалов и оборудования</li>
+            <li>Подготовит план работ на участке</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="call-box">
+          <h3>Расскажите об особенностях грунта на вашем участке и <span class="color-accent">получите план монтажа и стоимость работ</span>
+          </h3>
+          <form method="post" class="form">
+            <label>
+              <span class="input-title">Телефон *</span>
+              <input type="text" name="phone" required>
+            </label>
+            <button type="submit" class="btn btn-accent btn-submit">Получить план работ</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-</section>
-<!--### SECTION END ###-->
+</div>
+<!--### SECTION book-departure END ###-->
 
-
-<!--### SECTION  ###-->
-<section class="">
-  <div class="container">
-
-  </div>
-</section>
-<!--### SECTION END ###-->
 
 <!--### SECTION works ###-->
-<section class="works" id="works">
+<section class="works p-70" id="works">
   <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>ПРИМЕРЫ НАШИХ РАБОТ</h2>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4 mt-50">
+        <div class="works-box">
+          <div class="works-box-images twenty-images">
+            <img src="img/work1.webp" alt="">
+            <img src="img/work1-2.webp" alt="">
+          </div>
+
+          <div class="works-box__name">Выборгский район коттеджный поселок «Ольшаники 2»</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 mt-50">
+        <div class="works-box">
+          <div class="works-box-images twenty-images">
+            <img src="img/work2.webp" alt="">
+            <img src="img/work2-2.webp" alt="">
+          </div>
+
+          <div class="works-box__name">Выборгский район коттеджный поселок «Ольшаники 2»</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 mt-50">
+        <div class="works-box">
+          <div class="works-box-images twenty-images">
+            <img src="img/work3.webp" alt="">
+            <img src="img/work3-2.webp" alt="">
+          </div>
+
+          <div class="works-box__name">Кировск,
+            Ленинградская область
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 mt-50">
+        <div class="works-box">
+          <div class="works-box-images twenty-images">
+            <img src="img/work4.webp" alt="">
+            <img src="img/work4-2.webp" alt="">
+          </div>
+
+          <div class="works-box__name">Лен. область, Выборгский район, пос. Видная Горка</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 mt-50">
+        <div class="works-box">
+          <div class="works-box-images twenty-images">
+            <img src="img/work5.webp" alt="">
+            <img src="img/work5-2.webp" alt="">
+          </div>
+
+          <div class="works-box__name">Лен. область,
+            Территория Кондакопшино
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4 mt-50">
+        <div class="works-box">
+          <div class="works-box-images twenty-images">
+            <img src="img/work6.webp" alt="">
+            <img src="img/work6-2.webp" alt="">
+          </div>
+
+          <div class="works-box__name">Лен. область, Ломоносовский район, пос. Ропша</div>
+        </div>
+      </div>
+
+      <div class="col-12 mt-50">
+        <a href="#" class="btn btn-accent btn-lg m-auto">РАССЧИТАТЬ СТОИМОСТЬ ПОД КЛЮЧ</a>
+      </div>
+    </div>
+
+    <div class="video-wrapper">
+      <div class="row">
+        <div class="col-12">
+          <h3>Посмотрите информационный ролик о дренажной системе</h3>
+        </div>
+
+        <div class="col-12">
+          <div class="video-about">
+            <iframe
+                data-src="https://www.youtube.com/embed/bMrrVqcmGGQ?vq=hd1080&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;autohide=1&amp;playsinline=1&amp;color=white&amp;enablejsapi=1&amp;mute=1"
+                frameborder="0" allowfullscreen=""
+                src="https://www.youtube.com/embed/bMrrVqcmGGQ?vq=hd1080&amp;rel=0&amp;modestbranding=1&amp;showinfo=0&amp;autohide=1&amp;playsinline=1&amp;color=white&amp;enablejsapi=1&amp;mute=1"
+                id="widget2"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!--### SECTION END ###-->
@@ -221,7 +440,7 @@
 
 
 <!--### SECTION projects ###-->
-<section class="projects bg-grey">
+<section class="projects bg-grey" id="projects">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -591,7 +810,7 @@
 <!--### SECTION advantages END ###-->
 
 <!--### SECTION why-company ###-->
-<section class="why-company bg-white p-70">
+<section class="why-company bg-white p-70" id="about">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -764,7 +983,7 @@
         <ul class="menu-footer my-ul">
           <li><a href="#about" class="go_to">О нас</a></li>
           <li><a href="#about_product" class="go_to">О Дренаже</a></li>
-          <li><a href="#project" class="go_to">Проекты дренажа со сметой</a></li>
+          <li><a href="#projects" class="go_to">Проекты дренажа со сметой</a></li>
           <li><a href="#works" class="go_to">Наши работы</a></li>
           <li><a href="#advantages" class="go_to">Преимущества</a></li>
           <li><a href="#reviews" class="go_to">Отзывы</a></li>
@@ -831,6 +1050,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
+<script src="js/jquery.event.move.js"></script>
+<script src="js/jquery.twentytwenty.js"></script>
 <script src="js/common.js"></script>
 
 </body>

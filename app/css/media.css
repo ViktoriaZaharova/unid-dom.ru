@@ -5,7 +5,50 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  /**/ }
+  header {
+    background: #1b1b1c;
+    padding: 15px 0; }
+    header .logo {
+      z-index: 2; }
+    header > .row {
+      position: initial; }
+  .header-wrapper {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    left: 0;
+    top: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 60px 20px 30px;
+    background: #1b1b1c; }
+  .btn-burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 2; }
+  .menu {
+    margin: 30px 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .menu li a {
+      padding: 10px 0; }
+  .header-box {
+    margin: 0 0 20px; }
+    .header-box .schedule {
+      text-align: left; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -17,25 +60,4 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  /**/ }
-
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/ }
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/ }
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/ }
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/ }
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
   /**/ }

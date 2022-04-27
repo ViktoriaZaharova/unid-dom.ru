@@ -2,7 +2,7 @@
 
 /*==========  section home ==========*/
 .home
-  background: url("../img/bg1.jpg") no-repeat center
+  background: url("../img/bg1.webp") no-repeat center
     size: cover
   color: #fff
   position: relative
@@ -75,7 +75,7 @@
 /*==========  section callback-prices ==========*/
 .callback-prices
   padding: 30px 0 40px
-  background: url("../img/bg2.jpg") no-repeat center
+  background: url("../img/bg2.webp") no-repeat center
     size: cover
   color: #fff
   position: relative
@@ -97,6 +97,86 @@
 
 
 
+/*==========  section advantages-product ==========*/
+.advantages-product-wrapper
+  text-align: center
+  h3
+    font-size: 30px
+    font-weight: bold
+    margin: 0 auto 30px
+    text-align: center
+    span
+      display: block
+
+.img-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 30px auto 0
+
+.advantages-product
+  h2
+    font-size: 40px
+    margin: 0 0 45px
+
+.question-wrapper
+  max-width: 450px
+  margin: 0 auto
+
+.accordion
+  .card
+    border-radius: 0
+    border: none
+      top: 1px solid #DDDDDD
+
+.card-header
+  background: transparent
+  padding: 20px 0
+  font-weight: bold
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+  font-size: 18px
+
+.collapsed .accordion-icon
+  &:after
+    display: block
+
+.accordion-icon
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 18px
+  height: 18px
+  min-width: 18px
+  &:before, &:after
+    content: ''
+    position: absolute
+    background: $black
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+  &:before
+    width: 100%
+    height: 2px
+  &:after
+    width: 2px
+    height: 100%
+    display: none
+
+.card-body
+  padding: 20px 0
+/*==========  section advantages-product end  ==========*/
+
+
+/*==========  section  ==========*/
+
+/*==========  section end  ==========*/
+
+
+
 /*==========  section  ==========*/
 
 /*==========  section end  ==========*/
@@ -113,27 +193,99 @@
 /*==========  section end  ==========*/
 
 
-/*==========  section  ==========*/
+/*==========  section works ==========*/
+.works-box
+  width: 100%
+  text-align: center
+  &__name
+    font-weight: bold
+    font-size: 22px
+    line-height: 1.37
+    margin: 10px 0 0
 
-/*==========  section end  ==========*/
+.works-box-images
+  height: 210px !important
 
 
 
-/*==========  section  ==========*/
+.twentytwenty-overlay:hover
+  background: transparent
 
-/*==========  section end  ==========*/
+.twentytwenty-after-label, .twentytwenty-before-label
+  opacity: 1
 
+.twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-before-label:before
+  left: 30px
 
-/*==========  section  ==========*/
+.twentytwenty-after-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before
+  right: 30px
 
-/*==========  section end  ==========*/
+.twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before
+  top: auto
+  bottom: 30px
+  padding: 0
+  margin: 0
+  background: transparent
+  font-size: 18px
+  font-weight: 700
+  line-height: 1.37
+  font-family: $default-font
+  letter-spacing: 0
+
+.twentytwenty-handle
+  width: 24px
+  height: 24px
+  border-width: 2px
+  margin-top: -14px
+  margin-left: -13px
+
+.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after
+  width: 2px
+
+.twentytwenty-horizontal .twentytwenty-handle:after
+  margin-top: 18px
+
+.twentytwenty-horizontal .twentytwenty-handle:before
+  margin-bottom: 18px
+
+.twentytwenty-left-arrow
+  border-right-width: 4px
+  margin-left: -13px
+
+.twentytwenty-right-arrow
+  border-left-width: 4px
+  margin-right: -13px
+
+.video-wrapper
+  margin: 60px 0 0
+  width: 100%
+  h3
+    font-size: 34px
+    width: 100%
+    line-height: 1.37
+    margin: 0 auto 30px
+    text-align: center
+
+.video-about
+  width: 100%
+  padding-bottom: 50%
+  position: relative
+  iframe
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+
+/*==========  section works end  ==========*/
 
 
 
 /*==========  section book-departure ==========*/
 .book-departure
   position: relative
-  background: url("../img/bg4.jpg") no-repeat center
+  background: url("../img/bg4.webp") no-repeat center
     size: cover
   z-index: 1
   padding: 40px 0 10px
@@ -179,6 +331,39 @@
     width: 100%
 
 /*==========  section book-departure end  ==========*/
+
+
+/*==========  section book-departure-v2 ==========*/
+.book-departure-v2
+  background: url("../img/bg3.webp") no-repeat center
+    size: cover
+  h2
+    margin: 0 auto 20px
+  h5
+    font-size: 18px
+    font-weight: 700
+    padding: 10px 0 20px
+    position: relative
+    margin: 0 auto 30px
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      transform: translate(-50%,0)
+      bottom: 0
+      background: $black
+      width: 30px
+      height: 1px
+  .box-text
+    margin: 0 auto 70px
+    max-width: 1050px
+  .call-box
+    h3
+      font-size: 20px
+      text-align: center
+
+
+/*==========  section book-departure-v2 end ==========*/
 
 
 /*==========  section projects ==========*/
@@ -273,7 +458,7 @@
 /*==========  section warranty ==========*/
 .warranty
   padding: 70px 0
-  background: url("../img/bg5.jpg") no-repeat center
+  background: url("../img/bg5.webp") no-repeat center
     size: cover
   position: relative
   z-index: 1
@@ -343,7 +528,7 @@
 /*==========  section advantages ==========*/
 .advantages
   position: relative
-  background: url("../img/bg5.jpg") no-repeat center
+  background: url("../img/bg5.webp") no-repeat center
     size: cover
   z-index: 1
   padding: 70px 0 30px
@@ -466,7 +651,7 @@
     left: 50%
     top: 50%
     transform: translate(-50%,-50%)
-    background: url("../img/bg6.jpg") no-repeat center
+    background: url("../img/bg6.webp") no-repeat center
       size: cover
     opacity: .15
     width: 100%
