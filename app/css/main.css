@@ -145,7 +145,8 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
-  font-size: 18px; }
+  font-size: 18px;
+  border: none; }
 
 .collapsed .accordion-icon:after {
   display: block; }
@@ -181,7 +182,7 @@
     display: none; }
 
 .card-body {
-  padding: 20px 0; }
+  padding: 0 0 20px; }
 
 /*==========  section advantages-product end  ==========*/
 /*==========  section  ==========*/
@@ -265,7 +266,7 @@
 
 .video-about {
   width: 100%;
-  padding-bottom: 50%;
+  padding-bottom: 56.25%;
   position: relative; }
   .video-about iframe {
     display: block;
@@ -463,7 +464,6 @@
 /*==========  section reviews end  ==========*/
 /*==========  section warranty ==========*/
 .warranty {
-  padding: 70px 0;
   background: url("../img/bg5.webp") no-repeat center;
     background-size: cover;
   position: relative;

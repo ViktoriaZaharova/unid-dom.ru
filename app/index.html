@@ -76,7 +76,7 @@
           </ul>
         </div>
 
-        <div class="btn-burger no-click">
+        <div class="btn-burger">
           <span></span>
           <span></span>
           <span></span>
@@ -451,7 +451,7 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-4 mt-50">
+      <div class="col-12 col-sm-6 col-lg-4 mt-50">
         <div class="projects-box">
           <div class="projects-box__img"><img src="img/house1.webp" alt=""></div>
           <div class="projects-box__body">
@@ -461,11 +461,11 @@
               <p>В рассрочку: от <strong>13 000 ₽/мес.</strong></p>
             </div>
 
-            <a href="#" class="btn btn-accent">Подробности</a>
+            <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#project1Modal">Подробности</a>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 mt-50">
+      <div class="col-12 col-sm-6 col-lg-4 mt-50">
         <div class="projects-box">
           <div class="projects-box__img"><img src="img/house2.webp" alt=""></div>
           <div class="projects-box__body">
@@ -475,11 +475,11 @@
               <p>В рассрочку: от <strong>24 000 ₽/мес.</strong></p>
             </div>
 
-            <a href="#" class="btn btn-accent">Подробности</a>
+            <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#project2Modal">Подробности</a>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 mt-50">
+      <div class="col-12 col-sm-6 col-lg-4 mt-50">
         <div class="projects-box">
           <div class="projects-box__img"><img src="img/house3.webp" alt=""></div>
           <div class="projects-box__body">
@@ -489,7 +489,7 @@
               <p>В рассрочку: от <strong>26 000 ₽/мес.</strong></p>
             </div>
 
-            <a href="#" class="btn btn-accent">Подробности</a>
+            <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#project3Modal">Подробности</a>
           </div>
         </div>
       </div>
@@ -630,9 +630,8 @@
 </section>
 <!--### SECTION reviews END ###-->
 
-
 <!--### SECTION warranty ###-->
-<section class="warranty">
+<section class="warranty p-70">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-12 col-lg-6">
@@ -711,10 +710,8 @@
         <div class="payment-service-box">
           <div class="payment-service-box__icon"><img src="img/icon2.svg" alt=""></div>
           <h4>Наличный рассчет </h4>
-
         </div>
       </div>
-
 
       <div class="col-12 col-sm-6 col-lg-6">
         <div class="payment-service-box">
@@ -932,7 +929,7 @@
             </a></li>
           </ul>
 
-          <a href="#" class="btn btn-black">Оставить заявку</a>
+          <a href="#" class="btn btn-black" data-target="#callModal" data-toggle="modal">Оставить заявку</a>
         </div>
       </div>
       <div class="col-12 col-lg-6">
@@ -951,13 +948,13 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2>Рассрочка от компании Юнид Эко</h2>
+        <h2>Рассрочка от компании <br>Юнид Эко</h2>
         <div class="box-text">
           <p>Компания Юнид Эко предоставляю рассрочку под 0% - <strong>без переплаты,
             без финансовых документов и без залогов.</strong></p>
         </div>
 
-        <a href="#" class="btn btn-accent">Узнать подробнее</a>
+        <a href="#" class="btn btn-accent" data-toggle="modal" data-target="#creditModal">Узнать подробнее</a>
       </div>
     </div>
   </div>
@@ -968,7 +965,7 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-md-4 col-lg-3">
         <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
         <div class="document-text">
           <p>Общество с ограниченной ответственностью организации «ПроМонтажСтрой»</p>
@@ -979,7 +976,7 @@
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <ul class="menu-footer my-ul">
           <li><a href="#about" class="go_to">О нас</a></li>
           <li><a href="#about_product" class="go_to">О Дренаже</a></li>
@@ -991,7 +988,7 @@
         </ul>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div class="footer-box">
           <a href="tel:+7 (812) 612-92-26" class="phone">
             <span class="footer-box__icon phone-icon"><svg class="svg-icon"><use
@@ -1012,7 +1009,7 @@
         </div>
       </div>
 
-      <div class="col-12 co-md-6 col-lg-3">
+      <div class="col-12 col-lg-3">
         <ul class="list-social my-ul">
           <li><a href="viber://contact?number=+7 (981) 800-34-67">
             <svg class="svg-icon">
@@ -1042,9 +1039,372 @@
 <!--### FOOTER END ###-->
 
 
-<a href="#" class="btn btn-accent btn-fixed" data-toggle="modal" data-target="#orderModal">РАССРОЧКА 0%</a>
+<a href="#" class="btn btn-accent btn-fixed" data-toggle="modal" data-target="#creditModal">РАССРОЧКА 0%</a>
 
 <a href="#" class="btn btn-scroll-top"><img src="img/btn-up.png" alt=""></a>
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="creditModal" tabindex="-1" aria-labelledby="creditModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Рассрочка в компании Юнид Эко</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="box-text">
+          <p>Компания Юнид Эко предоставляет рассрочку под 0% - <strong>без переплаты, без финансовых документов и без
+            залогов.</strong></p>
+
+          <p>Узнайте подробности оставив номер телефона в форме ниже:</p>
+        </div>
+
+        <form method="post" class="form">
+          <label>
+            <span class="input-title">Телефон *</span>
+            <input type="text" name="phone" required>
+          </label>
+          <button type="submit" class="btn btn-accent btn-submit">Получить план работ</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Оформить заявку</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form method="post" class="form">
+          <label>
+            <span class="input-title">Имя</span>
+            <input type="text" name="name">
+          </label>
+          <label>
+            <span class="input-title">Телефон *</span>
+            <input type="text" name="phone" required>
+          </label>
+          <label>
+            <span class="input-title">Email</span>
+            <input type="text" name="mail">
+          </label>
+          <button type="submit" class="btn btn-black">Отправить</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade project-modal" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Сметный расчёт дренажа, на участок 6 соток</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Наименование работ</th>
+              <th>Количество</th>
+              <th>Стоимость руб.</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><p>Дренажная система SoftRock (иностранный наполнитель) ⌀ 110 ⌀ 250 * L 3000</p></td>
+              <td><p>63 п.м.</p></td>
+              <td><p>34 650</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Монтажные работы по укладке Дренажной системы SoftRock ⌀ 110 ⌀ 250 * L 3000 (иностранный наполнитель)
+                  снаружи по периметру глубиной до (0,6) в почвенный слой глина/суглинок в тч. обратная засыпка песком -
+                  подготовка траншеи, нивелировка
+                </p>
+                <ul>
+                  <li>-обустройство песчаного основания</li>
+                  <li>-обустройство нормативного уклона</li>
+                  <li>- монтаж труб</li>
+                  <li>-обратная засыпка песком</li>
+                </ul>
+                <p class="color-accent">* ЦЕНА сохраняется при условии сохранения объема полного комплекса работ</p>
+              </td>
+              <td><p>63 усл./п.м</p></td>
+              <td><p>59 850</p></td>
+            </tr>
+            <tr>
+              <td><p>Муфты соеденительные D110</p></td>
+              <td><p>21 шт</p></td>
+              <td><p>2 310</p></td>
+            </tr>
+            <tr>
+              <td><p>Работа спец техники миниэкскаватор</p></td>
+              <td><p>1 смена</p></td>
+              <td><p>16 000</p></td>
+            </tr>
+            <tr>
+              <td><p>Колодец дренажный/смотровой в комплекте (дно+крышка) 315/271 h 1,0 м</p></td>
+              <td><p>5 шт</p></td>
+              <td><p>8 500</p></td>
+            </tr>
+            <tr>
+              <td><p>Сборка и установка смотрового колодца, подсоединение его к дренажным трубам, обваловка</p></td>
+              <td><p>5 усл</p></td>
+              <td><p>12 500</p></td>
+            </tr>
+            <tr>
+              <td><p>Монтажный комплект для герметизации стыков (герметик, шпагат, тросы, зажимы) Отводы НПВХ (наруж.)
+                110/90 ; 110/45; тройники 110;</p></td>
+              <td><p>1 компл.</p></td>
+              <td><p>4 500</p></td>
+            </tr>
+            <tr>
+              <td><p>Доставка оборудования/материалов до места монтажа- СПБ/ЛО до 100км от КАД</p></td>
+              <td><p>1 Усл.</p></td>
+              <td><p>3 500</p></td>
+            </tr>
+            <tr>
+              <td><p>Песок ГОСТ в т.ч. Доставка</p>
+                <p class="color-accent">*ЦЕНА сохраняется при условии сохранения объема комплекса работ</p>
+              </td>
+              <td><p>20 м3</p></td>
+              <td><p>15 000</p></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <td>Итого по Дренажу:</td>
+              <td></td>
+              <td>156 810</td>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade project-modal" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Сметный расчёт дренажа, на участок 8 соток</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Наименование работ</th>
+              <th>Количество</th>
+              <th>Стоимость руб.</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><p>Дренажная система SoftRock (иностранный наполнитель) ⌀ 110 ⌀ 250 * L 3000</p></td>
+              <td><p>150 п.м.</p></td>
+              <td><p>82 500</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Монтажные работы по укладке Дренажной системы SoftRock ⌀ 110 ⌀ 250 * L 3000 (иностранный наполнитель)
+                  снаружи по периметру глубиной до (0,6) в почвенный слой глина/суглинок в тч. обратная засыпка песком -
+                  нивелировка</p>
+                <ul>
+                  <li>-обустройство песчаного основания</li>
+                  <li>-обустройство нормативного уклона</li>
+                  <li>-монтаж труб</li>
+                  <li>-обратная засыпка песком</li>
+                </ul>
+                <p class="color-accent">* ЦЕНА сохраняется при условии сохранения объема полного комплекса работ</p>
+              </td>
+              <td><p>150 усл./п.м</p></td>
+              <td><p>142 500</p></td>
+            </tr>
+            <tr>
+              <td><p>Муфты соеденительные D110</p></td>
+              <td><p>50 шт</p></td>
+              <td><p>4 300</p></td>
+            </tr>
+            <tr>
+              <td><p>Работа спец техники миниэкскаватор ( или откопка траншей вручную)</p></td>
+              <td><p>1 8ч./смена</p></td>
+              <td><p>16 000</p></td>
+            </tr>
+            <tr>
+              <td><p>Колодец дренажный/смотровой в комплекте (дно+крышка) 315/271 h 1,5м</p></td>
+              <td><p>4 шт</p></td>
+              <td><p>6 240</p></td>
+            </tr>
+            <tr>
+              <td><p>Сборка и установка смотрового колодца, подсоединение его к дренажным трубам, обваловка</p></td>
+              <td><p>4 шт/усл</p></td>
+              <td><p>5 200</p></td>
+            </tr>
+            <tr>
+              <td><p>Вывод общего стока</p></td>
+              <td><p>6 усл/мп</p></td>
+              <td><p>1 500</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Монтажный комплект (герметик, шпагат, тросы, зажимы) Отводы НПВХ (наруж.) 110/90 ; 110/45; тройники
+                  110</p>
+              </td>
+              <td>
+                <p>1 компл.</p>
+              </td>
+              <td>
+                <p>4 500</p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>Доставка оборудования/материалов до места монтажа- СПБ/ЛО до 100км от КАД</p></td>
+              <td><p>1 усл</p></td>
+              <td><p>3 500</p></td>
+            </tr>
+            <tr>
+              <td><p>Песок ГОСТ в т.ч. Доставка </p>
+                <p class="color-accent">*ЦЕНА сохраняется при условии сохранения объема комплекса работ</p>
+              </td>
+              <td><p>40 м3</p></td>
+              <td><p>30 000</p></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <td>Итого по Дренажу:</td>
+              <td></td>
+              <td>296 240</td>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade project-modal" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Сметный расчёт дренажа, на участок 10 соток</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Наименование работ</th>
+              <th>Количество</th>
+              <th>Стоимость руб.</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><p>Дренажная система SoftRock (иностранный наполнитель) ⌀ 110 ⌀ 250 * L 3000</p></td>
+              <td><p>174 п.м.</p></td>
+              <td><p>81 780</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Монтажные работы по укладке Дренажной системы SoftRock ⌀ 110 ⌀ 250 * L 3000 (иностранный наполнитель)
+                  снаружи по периметру глубиной до (0,6) в почвенный слой глина/суглинок в тч. обратная засыпка
+                  песком</p>
+                <ul>
+                  <li>-подготовка траншеи, нивелировка</li>
+                  <li>-обустройство песчаного основания</li>
+                  <li>-обустройство нормативного уклона</li>
+                  <li>-монтаж труб</li>
+                  <li>-обратная засыпка песком</li>
+                </ul>
+                <p class="color-accent">*ЦЕНА сохраняется при условии сохранения объема полного комплекса работ</p>
+              </td>
+              <td><p>174 усл./п.м</p></td>
+              <td><p>127 000</p></td>
+            </tr>
+            <tr>
+              <td><p>Муфты соеденительные D110</p></td>
+              <td><p>58 шт</p></td>
+              <td><p>5 626</p></td>
+            </tr>
+            <tr>
+              <td><p>Работа спец техники миниэкскаватор</p></td>
+              <td><p>2 смены</p></td>
+              <td><p>32 000</p></td>
+            </tr>
+            <tr>
+              <td><p>Сборка и установка смотрового колодца (в т.ч. Колодец Н1,5 + колодец Н1,0 - 2шт) ) подсоединение
+                его к дренажным трубам, обваловка</p></td>
+              <td><p>4 усл</p></td>
+              <td><p>14 400</p></td>
+            </tr>
+            <tr>
+              <td><p>Дождеприемник корпус пластиковый в т.ч. Решетка SP 300х300х300 в комплекте с корзиной,
+                пескоулавливатель, сифон, в т.ч., установа и подключение к системе</p></td>
+              <td><p>4 шт</p></td>
+              <td><p>7 880</p></td>
+            </tr>
+            <tr>
+              <td><p>Монтажный комплект для герметизации стыков (герметик, шпагат, тросы, зажимы) Отводы НПВХ (наруж.)
+                110/90 ; 110/45; тройники 110;</p></td>
+              <td><p>1 компл.</p></td>
+              <td><p>4 500</p></td>
+            </tr>
+            <tr>
+              <td>
+                <p>Доставка оборудования/материалов до места монтажа- СПБ/ЛО до 100км от КАД</p>
+              </td>
+              <td>
+                <p>1 Усл.</p>
+              </td>
+              <td>
+                <p>3 500</p>
+              </td>
+            </tr>
+            <tr>
+              <td><p>Песок ГОСТ в т.ч. Доставка </p>
+                <p class="color-accent">*ЦЕНА сохраняется при условии сохранения объема комплекса работ</p>
+              </td>
+              <td><p>55 м3</p></td>
+              <td><p>38 500</p></td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+              <td>Итого по Дренажу:</td>
+              <td></td>
+              <td>315 186</td>
+            </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"

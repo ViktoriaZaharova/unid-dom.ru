@@ -143,6 +143,8 @@ button, .btn {
 
 .btn-lg {
   padding: 16px 30px; }
+  .btn-lg:hover {
+    padding: 16px 34px; }
 
 .btn-accent {
   color: #fff;
