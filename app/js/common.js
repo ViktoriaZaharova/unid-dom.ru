@@ -48,3 +48,94 @@ $(document).ready(function () {
     });
 });
 //плавный скролл end
+
+
+$('.modal').on('shown.bs.modal', function (e) {
+    $('.slick-slider').slick('setPosition');
+});
+
+
+
+
+$('.form-quiz__content').slick({
+    slidesToShow: 1,
+    fade: true,
+    nextArrow: '<button type="button" class="slick-next btn-next">Далее</button>',
+    prevArrow: '<button type="button" class="slick-prev btn-prev"><img src="img/arrow-left.svg" alt=""></button>',
+    appendArrows: '.form-quiz-nav',
+    infinite: false,
+    adaptiveHeight: true,
+    responsive: [
+        {
+            breakpoint: 830,
+            settings: {
+                adaptiveHeight: true
+            }
+        }
+    ]
+});
+
+function setProgress(index) {
+    const calc = ((index) / ($slider.slick('getSlick').slideCount)) * 100;
+
+    $progressBar
+        .css('width', calc + '%')
+        .attr('aria-valuenow', calc);
+
+
+    $progressBarLabel.text(`${calc.toFixed()}%`);
+
+}
+
+const $slider = $('.form-quiz__content');
+const $progressBar = $('.progress-bg');
+const $progressBarLabel = $('.percent-val');
+
+$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    setProgress(nextSlide);
+});
+
+setProgress(0);
+
+$(".form-quiz__content").on("afterChange", function (event) {
+    if ($(this).find('.slick-slide').last().hasClass('slick-active')) {
+        $('.slick-arrow').hide();
+        $('.btn-submit-quiz').css('display', 'flex');
+    }
+});
+
+
+// mail
+$(".form").submit(function () {
+
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize(),
+        async: true,
+        success: function (data) {
+            $(this).find("input").val("");
+
+            // $('.modal__div').css('display', 'none').animate({
+            //     opacity: 0,
+            //     top: '45%'
+            // });
+
+            // $('#thanks__modal').css('display', 'flex')
+            //     .animate({
+            //         opacity: 1,
+            //         top: '50%'
+            //     }, 200);
+
+            // setTimeout(function () {
+            //     $("#thanks__modal").css('display', 'none').animate({
+            //         opacity: 0,
+            //         top: '45%'
+            //     });
+            //     $('.overlay').fadeOut(400);
+            // }, 1000);
+            $(".form").trigger("reset");
+        }
+    });
+    return false;
+});

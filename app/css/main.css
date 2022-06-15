@@ -71,6 +71,21 @@
     -webkit-transform: scale(1.05, 1.05);
             transform: scale(1.05, 1.05); }
 
+.about-product-box {
+  font-size: 18px;
+  margin: 40px 0 0; }
+  .about-product-box h3 {
+    font-weight: bold;
+    padding: 0 0 10px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 22px;
+    margin: 0 0 20px;
+    border-bottom: 2px solid #F06E28; }
+  .about-product-box .box-text {
+    max-width: 400px; }
+
 /*==========  section about-product end  ==========*/
 /*==========  section callback-prices ==========*/
 .callback-prices {
@@ -101,10 +116,21 @@
   .advantages-product-wrapper h3 {
     font-size: 30px;
     font-weight: bold;
-    margin: 0 auto 30px;
+    margin: 0 auto 20px;
     text-align: center; }
     .advantages-product-wrapper h3 span {
       display: block; }
+  .advantages-product-wrapper ul {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    text-align: left; }
+    .advantages-product-wrapper ul li {
+      margin: 0 0 10px; }
+      .advantages-product-wrapper ul li:last-child {
+        margin: 0; }
 
 .img-icon {
   display: -webkit-box;
@@ -631,8 +657,7 @@
     margin: 30px 0 50px; }
     .contacts .list-social li a {
       width: 24px;
-      height: 24px;
-      fill: #1b1b1c; }
+      height: 24px; }
   .contacts .document-text {
     font-size: 18px;
     line-height: 1.5;

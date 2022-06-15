@@ -68,6 +68,20 @@
     img
       transform: scale(1.05, 1.05)
 
+.about-product-box
+  font-size: 18px
+  margin: 40px 0 0
+  h3
+    font-weight: bold
+    padding: 0 0 10px
+    width: fit-content
+    font-size: 22px
+    margin: 0 0 20px
+    border-bottom: 2px solid $accent
+  .box-text
+    max-width: 400px
+
+
 /*==========  section about-product end  ==========*/
 
 
@@ -103,10 +117,20 @@
   h3
     font-size: 30px
     font-weight: bold
-    margin: 0 auto 30px
+    margin: 0 auto 20px
     text-align: center
     span
       display: block
+  ul
+    width: fit-content
+    margin: 0 auto 30px
+    font-size: 18px
+    text-align: left
+    li
+      margin: 0 0 10px
+      &:last-child
+        margin: 0
+
 
 .img-icon
   display: flex
@@ -614,7 +638,7 @@
       a
         width: 24px
         height: 24px
-        fill: #1b1b1c
+        //fill: #1b1b1c
   .document-text
     font-size: 18px
     line-height: 1.5

@@ -99,7 +99,20 @@ footer {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      fill: #fff; }
+      fill: #fff;
+      padding: 4px; }
+
+.youtube-icon {
+  background: #ff1e25; }
+
+.vk-icon {
+  background: #5281b8; }
+
+.viber-icon {
+  background: #6f3faa; }
+
+.whatsapp-icon {
+  background: #25d366; }
 
 /*==========  footer end  ==========*/
 /*==========  modal  ==========*/
@@ -199,5 +212,241 @@ footer {
     border: 1px solid #cdcdcd; }
   .table tfoot {
     font-weight: bold; }
+
+.quiz-modal .modal-dialog {
+  max-width: none;
+  width: 100%; }
+
+.quiz-modal .modal-content {
+  padding: 60px 30px 90px; }
+
+.timeline-wrapper {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 60px;
+  position: relative; }
+
+.percent-val {
+  position: relative;
+  color: #1B1B1C;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 0 5px auto; }
+
+.progress {
+  width: 100%;
+  background: rgba(27, 27, 28, 0.5);
+  margin: 0 auto;
+  height: 4px;
+  position: relative; }
+
+.progress-bg {
+  height: 100%;
+  background: #F06E28; }
+
+.form-quiz-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px auto 0;
+  width: 100%; }
+
+.slick-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40px; }
+
+.btn-prev {
+  width: 40px;
+  margin: 0 10px 0 0;
+  background: rgba(27, 27, 28, 0.5); }
+
+.slick-next {
+  background: #F06E28;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #fff;
+  height: 40px; }
+
+.suggestion-next {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  padding-left: 20px;
+  color: #000;
+  opacity: .5; }
+
+.quiz-stages {
+  width: 100%; }
+
+.list-checkbox li {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto 10px;
+  text-align: left; }
+  .list-checkbox li:last-child {
+    margin: 0 auto; }
+
+.checkbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%; }
+  .checkbox .label {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+
+.checkbox-inp {
+  display: none; }
+  .checkbox-inp:checked ~ .checkbox-custom:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background: url("../img/check.svg") no-repeat center;
+      background-size: 100%; }
+
+.checkbox-custom {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  border: 2px solid #1B1B1C;
+    border-radius: 2px;
+  position: relative;
+  margin: 0 10px 0 0;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1; }
+
+.form-quiz__content {
+  width: 100%;
+  font-size: 18px; }
+  .form-quiz__content .list-checkbox {
+    list-style: none;
+    padding: 0; }
+  .form-quiz__content .checkbox-inp {
+    display: none; }
+  .form-quiz__content .checkbox {
+    cursor: pointer;
+    -webkit-transition: .3s ease;
+    transition: .3s ease; }
+    .form-quiz__content .checkbox .image {
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+      position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 100%;
+      padding-bottom: 56.25%;
+      overflow: hidden; }
+      .form-quiz__content .checkbox .image img {
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0; }
+
+.radio .checkbox-custom {
+  border-radius: 50%; }
+
+.radio .checkbox-inp:checked ~ .checkbox-custom:before {
+  background: #F06E28;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px; }
+
+.list-gallery-checkbox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-gallery-checkbox li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    padding: 0 10px; }
+  .list-gallery-checkbox .checkbox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .list-gallery-checkbox .checkbox:hover .image {
+      opacity: .8; }
+    .list-gallery-checkbox .checkbox .image {
+      background: #000; }
+      .list-gallery-checkbox .checkbox .image:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: calc(50% - 30px);
+        -webkit-transform: translate(-50%, 50%);
+                transform: translate(-50%, 50%);
+        width: 40px;
+        height: 40px;
+        border: 2px solid #fff;
+          border-radius: 50%;
+        background: url("../img/check-icon.svg") no-repeat center;
+          background-size: 80%;
+        opacity: 0;
+        -webkit-transition: .3s ease;
+        transition: .3s ease;
+        z-index: 1; }
+  .list-gallery-checkbox .checkbox-custom {
+    display: none; }
+  .list-gallery-checkbox .checkbox-inp:checked + .image img {
+    opacity: .7; }
+  .list-gallery-checkbox .checkbox-inp:checked + .image:before {
+    opacity: 1; }
+  .list-gallery-checkbox .label {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px auto 0; }
+
+.title-quiz {
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto 30px;
+  font-family: "Playfair Display", sans-serif; }
+
+.btn-submit-quiz {
+  display: none; }
 
 /*==========  modal-dialog end  ==========*/
