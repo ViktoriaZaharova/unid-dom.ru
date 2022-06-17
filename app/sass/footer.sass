@@ -80,6 +80,8 @@ footer
     &:last-child
       margin: 0
     a
+      border-radius: 4px
+      overflow: hidden
       width: 30px
       height: 30px
       display: flex
@@ -206,8 +208,18 @@ footer
   .modal-dialog
     max-width: none
     width: 100%
+    margin: auto
+    min-height: auto
+    height: 100%
+    background: #fff
+    display: flex
   .modal-content
     padding: 60px 30px 90px
+
+  .modal-body
+    display: flex
+    flex-direction: column
+    justify-content: center
 
 .timeline-wrapper
   width: 100%
@@ -222,7 +234,6 @@ footer
   text-align: center
   font-weight: 500
   margin: 0 0 5px auto
-
 
 .progress
   width: 100%
@@ -253,14 +264,12 @@ footer
   margin: 0 10px 0 0
   background: rgba($black, .5)
 
-
 .slick-next
   background: $accent
   border-radius: 3px
   padding: 10px 20px
   color: #fff
   height: 40px
-
 
 .suggestion-next
   order: 1
@@ -273,6 +282,7 @@ footer
 
 .list-checkbox
   li
+    min-width: 269px
     max-width: 300px
     width: 100%
     margin: 0 auto 10px
@@ -312,7 +322,6 @@ footer
   margin: 0 10px 0 0
   order: -1
 
-
 .form-quiz__content
   width: 100%
   font-size: 18px
@@ -333,15 +342,15 @@ footer
       align-items: center
       justify-content: center
       width: 100%
-      padding-bottom: 56.25%
-      overflow: hidden
+      height: 455px
       img
         width: 100%
         height: 100%
         object-fit: cover
-        position: absolute
-        left: 0
-        top: 0
+
+  .label-text
+    max-width: 300px
+    margin: 0 auto 20px
 
 .radio
   .checkbox-custom
@@ -358,7 +367,6 @@ footer
   width: 100%
   display: flex
   align-items: stretch
-  flex-wrap: wrap
   li
     flex: 1
     padding: 0 10px
@@ -392,13 +400,18 @@ footer
           opacity: .7
         &:before
           opacity: 1
-
-
   .label
     display: block
     width: 100%
     text-align: center
     margin: 10px auto 0
+
+.list-checkbox-social
+  li
+    .checkbox
+      .image
+        height: 269px
+
 
 .title-quiz
   text-align: center
@@ -408,4 +421,10 @@ footer
 
 .btn-submit-quiz
   display: none
+
+.scroll-block
+  overflow-y: auto
+  width: 100%
+
+
 /*==========  modal-dialog end  ==========*/

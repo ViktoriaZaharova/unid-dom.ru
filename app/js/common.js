@@ -75,6 +75,8 @@ $('.form-quiz__content').slick({
     ]
 });
 
+$('[name="phone"]').mask('+7 (999) 999-99-99');
+
 function setProgress(index) {
     const calc = ((index) / ($slider.slick('getSlick').slideCount)) * 100;
 
@@ -107,35 +109,15 @@ $(".form-quiz__content").on("afterChange", function (event) {
 
 // mail
 $(".form").submit(function () {
-
     $.ajax({
         type: "POST",
         url: "mail.php",
-        data: $(this).serialize(),
-        async: true,
-        success: function (data) {
-            $(this).find("input").val("");
-
-            // $('.modal__div').css('display', 'none').animate({
-            //     opacity: 0,
-            //     top: '45%'
-            // });
-
-            // $('#thanks__modal').css('display', 'flex')
-            //     .animate({
-            //         opacity: 1,
-            //         top: '50%'
-            //     }, 200);
-
-            // setTimeout(function () {
-            //     $("#thanks__modal").css('display', 'none').animate({
-            //         opacity: 0,
-            //         top: '45%'
-            //     });
-            //     $('.overlay').fadeOut(400);
-            // }, 1000);
-            $(".form").trigger("reset");
-        }
+        data: $(this).serialize()
+    }).done(function () {
+        $(this).find("input").val("");
+        // alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+        window.location.href = "thanks.html";
+        $(".form").trigger("reset");
     });
     return false;
 });

@@ -131,6 +131,11 @@
       margin: 0 0 10px; }
       .advantages-product-wrapper ul li:last-child {
         margin: 0; }
+  .advantages-product-wrapper h4 {
+    font-size: 24px;
+    text-align: center;
+    margin: 0 auto 20px;
+    font-weight: bold; }
 
 .img-icon {
   display: -webkit-box;
@@ -228,9 +233,6 @@
     font-size: 22px;
     line-height: 1.37;
     margin: 10px 0 0; }
-
-.works-box-images {
-  height: 210px !important; }
 
 .twentytwenty-overlay:hover {
   background: transparent; }
@@ -708,3 +710,49 @@
     margin: 0 auto; }
 
 /*==========  section installment-plan end  ==========*/
+/*==========  section thanks  ==========*/
+.thanks {
+  margin: 80px 0 0; }
+  .thanks h2 {
+    margin: 0 0 40px; }
+
+.result-variable h3 {
+  margin: 0 0 30px;
+  font-weight: bold;
+  font-size: 20px; }
+
+.result-variable ul li {
+  margin: 0 0 10px; }
+  .result-variable ul li:last-child {
+    margin: 0; }
+
+.result-variable ul p {
+  font-weight: bold; }
+
+.edits-phone {
+  padding: 50px 0;
+  margin: 80px 0 0;
+  background: #f5f5f5; }
+  .edits-phone h3 {
+    font-size: 24px;
+    margin: 0 auto 40px;
+    text-align: center; }
+  .edits-phone .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .edits-phone .form label {
+      margin: 0 20px 0 0;
+      max-width: 300px; }
+    .edits-phone .form button {
+      max-width: 200px; }
+
+/*==========  section thanks end  ==========*/
