@@ -1,20 +1,24 @@
 @import "vars"
 
 /*==========  footer  ==========*/
+
 footer
   padding: 75px 0 35px
   color: #fff
   background: #1B1B1C
+
   .logo
     margin: 0 0 30px
     max-width: 168px
+
   .phone
     color: #fff
     font-weight: bold
     margin: 0 0 10px
     font-size: 16px
+
     &:hover
-      color: $accent
+      color: #F06E28
 
 .document-text
   font-size: 14px
@@ -22,30 +26,36 @@ footer
   line-height: 1.4
 
 .logo
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
 
 .menu-footer
   font-size: 18px
-  li
-    a
-      color: #fff
-      position: relative
-      padding: 6px 0
-      &:before
-        content: ''
-        position: absolute
-        left: 0
-        bottom: 0
-        width: 0
-        height: 2px
-        transition: .3s ease
-        opacity: 0
-        background: #6B6B6B
-      &:hover
-        &:before
-          width: 100%
-          opacity: 1
+
+  li a
+    color: #fff
+    position: relative
+    padding: 6px 0
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 0
+      height: 2px
+      -webkit-transition: .3s ease
+      transition: .3s ease
+      opacity: 0
+      background: #6B6B6B
+
+    &:hover:before
+      width: 100%
+      opacity: 1
 
 .footer-box
   margin: 0 0 35px
@@ -53,15 +63,19 @@ footer
   padding: 0 0 0 35px
   font-size: 14px
   line-height: 1.4
-  &__icon
-    fill: #fff
-    position: absolute
-    width: 26px
-    height: 26px
-    left: 0
-    top: 0
+
+.footer-box__icon
+  fill: #fff
+  position: absolute
+  width: 26px
+  height: 26px
+  left: 0
+  top: 0
+
+.footer-box
   &:last-child
     margin: 0
+
   h3
     font-size: 16px
     font-weight: bold
@@ -71,21 +85,37 @@ footer
   max-width: 250px
 
 .list-social
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
+  -ms-flex-wrap: wrap
   flex-wrap: wrap
+  -webkit-box-pack: end
+  -ms-flex-pack: end
   justify-content: flex-end
+
   li
     margin: 0 12px 0 0
+
     &:last-child
       margin: 0
+
     a
       border-radius: 4px
       overflow: hidden
       width: 30px
       height: 30px
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
       fill: #fff
       padding: 4px
@@ -101,36 +131,39 @@ footer
 
 .whatsapp-icon
   background: #25d366
+
 /*==========  footer end  ==========*/
-
-
-
 /*==========  modal  ==========*/
+
 .modal-dialog
   max-width: 400px
 
 .modal-content
   border: none
-    radius: 3px
+  border-radius: 3px
   background: #fff
   padding: 30px
+
   .box-text
     text-align: center
     font-size: 18px
     line-height: 1.5
     margin: 0 0 30px
+
     p
       margin: 0 0 30px
+
       &:last-child
         margin: 0
 
-
 .modal-header
   text-align: center
+  -ms-flex-wrap: wrap
   flex-wrap: wrap
   padding: 0
   border: none
   margin: 0 0 30px
+
   .close
     position: absolute
     right: 20px
@@ -142,17 +175,22 @@ footer
     padding: 0
     width: 20px
     height: 20px
+
     &:before, &:after
       content: ''
       position: absolute
       left: 10px
       top: 0
-      background: $black
+      background: #1B1B1C
       width: 2px
       height: 100%
+
     &:before
+      -webkit-transform: rotate(45deg)
       transform: rotate(45deg)
+
     &:after
+      -webkit-transform: rotate(135deg)
       transform: rotate(135deg)
 
 .modal-title
@@ -165,44 +203,49 @@ footer
 .modal-body
   padding: 0
 
-#creditModal
-  .modal-content
-    border: 2px solid $accent
+#creditModal .modal-content
+  border: 2px solid #F06E28
 
 .modal-backdrop.show
   opacity: .8
 
-.project-modal
-  .modal-dialog
-    max-width: 800px
+.project-modal .modal-dialog
+  max-width: 800px
 
 .table
   border: 1px solid #cdcdcd
   background: rgba(240, 110, 40, 0.03)
   line-height: 1.5
+
   td, th
     vertical-align: middle
     padding: 10px
-    &:first-child
-      width: 60%
+
+  td:first-child, th:first-child
+    width: 60%
+
   thead
-    background: $black
+    background: #1B1B1C
     color: #fff
     font-weight: bold
+
     th
       vertical-align: middle
       border: none
-        right: 1px solid #fff
+      border-right: 1px solid #fff
+
       &:last-child
         border-right: none
+
   ul
     padding: 0
     list-style: none
+
   td
     border: 1px solid #cdcdcd
+
   tfoot
     font-weight: bold
-
 
 .quiz-modal
   .modal-dialog
@@ -212,14 +255,24 @@ footer
     min-height: auto
     height: 100%
     background: #fff
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+
   .modal-content
     padding: 60px 30px 90px
     overflow-y: auto
 
   .modal-body
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
     flex-direction: column
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
 
 .timeline-wrapper
@@ -230,7 +283,8 @@ footer
 
 .percent-val
   position: relative
-  color: $black
+  color: #1B1B1C
+  width: -moz-fit-content
   width: fit-content
   text-align: center
   font-weight: 500
@@ -238,41 +292,58 @@ footer
 
 .progress
   width: 100%
-  background: rgba($black, .5)
+  background: rgba(27, 27, 28, 0.5)
   margin: 0 auto
   height: 4px
   position: relative
 
 .progress-bg
   height: 100%
-  background: $accent
+  background: #F06E28
 
 .form-quiz-nav
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
   justify-content: center
   margin: 50px auto 0
   width: 100%
+  .btn, .slick-arrow
+    width: fit-content
+  .slick-prev
+    width: 40px
+    height: 40px
 
 .slick-arrow
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
   justify-content: center
   height: 40px
 
 .btn-prev
   width: 40px
   margin: 0 10px 0 0
-  background: rgba($black, .5)
+  background: rgba(27, 27, 28, 0.5)
 
 .slick-next
-  background: $accent
+  background: #F06E28
   border-radius: 3px
   padding: 10px 20px
   color: #fff
   height: 40px
 
 .suggestion-next
+  -webkit-box-ordinal-group: 2
+  -ms-flex-order: 1
   order: 1
   padding-left: 20px
   color: #000
@@ -281,51 +352,61 @@ footer
 .quiz-stages
   width: 100%
 
-.list-checkbox
-  li
-    min-width: 269px
-    max-width: 300px
-    width: 100%
-    margin: 0 auto 10px
-    text-align: left
-    &:last-child
-      margin: 0 auto
+.list-checkbox li
+  min-width: 269px
+  max-width: 300px
+  width: 100%
+  margin: 0 auto 10px
+  text-align: left
+
+  &:last-child
+    margin: 0 auto
 
 .checkbox
   position: relative
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
   width: 100%
+
   .label
+    width: -moz-fit-content
     width: fit-content
 
 .checkbox-inp
   display: none
-  &:checked ~ .checkbox-custom
-    &:before
-      content: ''
-      position: absolute
-      left: 50%
-      top: 50%
-      transform: translate(-50%,-50%)
-      width: 20px
-      height: 20px
-      background: url("../img/check.svg") no-repeat center
-        size: 100%
+
+  &:checked ~ .checkbox-custom:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    width: 20px
+    height: 20px
+    background: url("../img/check.svg") no-repeat center
+    background-size: 100%
 
 .checkbox-custom
   width: 30px
   height: 30px
   min-width: 30px
-  border: 2px solid $black
-    radius: 2px
+  border: 2px solid #1B1B1C
+  border-radius: 2px
   position: relative
   margin: 0 10px 0 0
+  -webkit-box-ordinal-group: 0
+  -ms-flex-order: -1
   order: -1
 
 .form-quiz__content
   width: 100%
   font-size: 18px
+
   .list-checkbox
     list-style: none
     padding: 0
@@ -335,18 +416,29 @@ footer
 
   .checkbox
     cursor: pointer
+    -webkit-transition: .3s ease
     transition: .3s ease
+
     .image
+      -webkit-transition: .3s ease
       transition: .3s ease
       position: relative
+      display: -webkit-box
+      display: -ms-flexbox
       display: flex
+      -webkit-box-align: center
+      -ms-flex-align: center
       align-items: center
+      -webkit-box-pack: center
+      -ms-flex-pack: center
       justify-content: center
       width: 100%
       height: 400px
+
       img
         width: 100%
         height: 100%
+        -o-object-fit: cover
         object-fit: cover
 
   .label-text
@@ -356,69 +448,83 @@ footer
 .radio
   .checkbox-custom
     border-radius: 50%
-  .checkbox-inp
-    &:checked ~ .checkbox-custom
-      &:before
-        background: $accent
-        border-radius: 50%
-        width: 16px
-        height: 16px
+
+  .checkbox-inp:checked ~ .checkbox-custom:before
+    background: #F06E28
+    border-radius: 50%
+    width: 16px
+    height: 16px
 
 .list-gallery-checkbox
   width: 100%
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: stretch
+  -ms-flex-align: stretch
   align-items: stretch
+
   li
+    -webkit-box-flex: 1
+    -ms-flex: 1
     flex: 1
     padding: 0 10px
+
   .checkbox
+    -ms-flex-wrap: wrap
     flex-wrap: wrap
-    &:hover
-      .image
-        opacity: .8
+
+    &:hover .image
+      opacity: .8
+
     .image
       background: #000
+
       &:before
         content: ''
         position: absolute
         left: 50%
         top: calc(50% - 30px)
-        transform: translate(-50%,50%)
+        -webkit-transform: translate(-50%, 50%)
+        transform: translate(-50%, 50%)
         width: 40px
         height: 40px
         border: 2px solid #fff
-          radius: 50%
+        border-radius: 50%
         background: url("../img/check-icon.svg") no-repeat center
-          size: 80%
+        background-size: 80%
         opacity: 0
+        -webkit-transition: .3s ease
         transition: .3s ease
         z-index: 1
+
   .checkbox-custom
     display: none
-  .checkbox-inp:checked
-    + .image
-        img
-          opacity: .7
-        &:before
-          opacity: 1
+
+  .checkbox-inp:checked + .image
+    img
+      opacity: .7
+
+    &:before
+      opacity: 1
+
   .label
     display: block
     width: 100%
     text-align: center
     margin: 10px auto 0
 
-.list-checkbox-social
-  li
-    .checkbox
-      .image
-        height: 269px
-
+.list-checkbox-social li
+  min-width: 200px
+  max-width: 200px
+  .checkbox .image
+    height: 180px
 
 .title-quiz
   text-align: center
   font-size: 30px
   margin: 0 auto 30px
-  font-family: $title-font
+  font-family: "Playfair Display", sans-serif
 
 .btn-submit-quiz
   display: none
@@ -427,5 +533,6 @@ footer
   overflow-y: auto
   width: 100%
 
-
 /*==========  modal-dialog end  ==========*/
+
+

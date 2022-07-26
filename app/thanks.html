@@ -74,9 +74,12 @@
         <h2 class="title-decor">Спасибо за то, что оставили заявку на дренаж участка.</h2>
 
         <div class="box-text">
-          <p>Пока наш менеджер составляет проект, посмотрите <a href="#works" class="d-inline color-accent text-decoration go_to">примеры
-            работ</a> нашей компании, <a href="#reviews" class="d-inline color-accent go_to text-decoration">отзывы о работе</a> и
-            <a href="https://vk.com/septik_unid" target="_blank" class="d-inline color-accent text-decoration">группу во Вконтакте.</a>
+          <p>Пока наш менеджер составляет проект, посмотрите <a href="#works"
+                                                                class="d-inline color-accent text-decoration go_to">примеры
+            работ</a> нашей компании, <a href="#reviews" class="d-inline color-accent go_to text-decoration">отзывы о
+            работе</a> и
+            <a href="https://vk.com/septik_unid" target="_blank" class="d-inline color-accent text-decoration">группу во
+              Вконтакте.</a>
           </p>
         </div>
       </div>
@@ -121,7 +124,7 @@
         <div class="col-12">
           <h3>Если вы ошиблись при вводе номера, можете его исправить в форме ниже:</h3>
 
-          <form method="post" class="form">
+          <form method="post" class="form-number-change">
             <label>
               <input type="text" placeholder="Телефон *" name="phone" required>
             </label>
@@ -421,266 +424,270 @@
 
         </div>
 
-        <form method="post" class="form-quiz__content form">
-          <div class="slide">
-            <div class="quiz-stages quiz-stages__one">
-              <div class="title-quiz">Площадь вашего участка.</div>
+        <form method="post" class=" form">
+          <div class="form-quiz__content">
+            <div class="slide">
 
-              <div class="quiz-stages__content scroll-block">
-                <ul class="list-checkbox list-gallery-checkbox">
-                  <li>
-                    <label class="checkbox">
-                      <input class="checkbox-inp" type="radio" name="radio_square"
-                             value="Менее 10-ти соток">
-                      <span class="image"><img src="img/down10-min.png" alt=""></span>
-                      <span class="label">до 10-ти соток</span>
+              <div class="quiz-stages quiz-stages__one">
+                <div class="title-quiz">Площадь вашего участка.</div>
 
-                      <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                <div class="quiz-stages__content scroll-block">
+                  <ul class="list-checkbox list-gallery-checkbox">
+                    <li>
+                      <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio_square"
+                               value="Менее 10-ти соток">
+                        <span class="image"><img src="img/down10-min.png" alt=""></span>
+                        <span class="label">до 10-ти соток</span>
 
-                  <li>
-                    <label class="checkbox">
-                      <input class="checkbox-inp" type="radio" name="radio_square"
-                             value="10-15 соток">
-                      <span class="image"><img src="img/down10up20-min.png" alt=""></span>
-                      <span class="label">от 10 до 20 соток</span>
-                      <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
 
-                  <li>
-                    <label class="checkbox">
-                      <input class="checkbox-inp" type="radio" name="radio_square"
-                             value="15-20 соток">
-                      <span class="image"><img src="img/up20-min.png" alt=""></span>
-                      <span class="label">более 20 соток</span>
+                    <li>
+                      <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio_square"
+                               value="10-15 соток">
+                        <span class="image"><img src="img/down10up20-min.png" alt=""></span>
+                        <span class="label">от 10 до 20 соток</span>
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
 
-                      <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio_square"
+                               value="15-20 соток">
+                        <span class="image"><img src="img/up20-min.png" alt=""></span>
+                        <span class="label">более 20 соток</span>
 
-                  <li>
-                    <label class="checkbox">
-                      <input class="checkbox-inp" type="radio" name="radio_square"
-                             value="более 20-ти соток">
-                      <span class="image"><img src="img/dontknow-min.png" alt=""></span>
-                      <span class="label">не могу ответить</span>
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
 
-                      <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
-                </ul>
+                    <li>
+                      <label class="checkbox">
+                        <input class="checkbox-inp" type="radio" name="radio_square"
+                               value="более 20-ти соток">
+                        <span class="image"><img src="img/dontknow-min.png" alt=""></span>
+                        <span class="label">не могу ответить</span>
+
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
               </div>
-
             </div>
-          </div>
 
-          <div class="slide">
-            <div class="quiz-stages quiz-stages__two">
-              <div class="title-quiz">Какова площадь построек на участке?</div>
+            <div class="slide">
+              <div class="quiz-stages quiz-stages__two">
+                <div class="title-quiz">Какова площадь построек на участке?</div>
 
-              <div class="quiz-stages__content scroll-block">
-                <ul class="list-checkbox">
-                  <li>
-                    <label class="checkbox">
+                <div class="quiz-stages__content scroll-block">
+                  <ul class="list-checkbox">
+                    <li>
+                      <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="radio_building_area"
+                               value="менее 50 кв. метров">
+                        <span class="label">менее 50 кв. метров</span>
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
+
+                    <li><label class="checkbox">
                       <input class="checkbox-inp" type="checkbox" name="radio_building_area"
-                             value="менее 50 кв. метров">
-                      <span class="label">менее 50 кв. метров</span>
+                             value="от 50 - 100 кв. метров">
+                      <span class="label">от 50 - 100 кв. метров</span>
                       <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                    </label></li>
 
-                  <li><label class="checkbox">
-                    <input class="checkbox-inp" type="checkbox" name="radio_building_area"
-                           value="от 50 - 100 кв. метров">
-                    <span class="label">от 50 - 100 кв. метров</span>
-                    <span class="checkbox-custom"></span>
-                  </label></li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="radio_building_area"
+                               value="от 100 до 200 кв, метров">
+                        <span class="label">от 100 до 200 кв, метров</span>
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
 
-                  <li>
-                    <label class="checkbox">
-                      <input class="checkbox-inp" type="checkbox" name="radio_building_area"
-                             value="от 100 до 200 кв, метров">
-                      <span class="label">от 100 до 200 кв, метров</span>
-                      <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="radio_building_area"
+                               value="более 200 кв. метров">
+                        <span class="label">более 200 кв. метров</span>
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
 
-                  <li>
-                    <label class="checkbox">
-                      <input class="checkbox-inp" type="checkbox" name="radio_building_area"
-                             value="более 200 кв. метров">
-                      <span class="label">более 200 кв. метров</span>
-                      <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                    <li>
+                      <label class="checkbox">
+                        <input class="checkbox-inp" type="checkbox" name="radio_building_area"
+                               value="не могу сказать">
+                        <span class="label">не могу сказать</span>
 
-                  <li>
-                    <label class="checkbox">
-                      <input class="checkbox-inp" type="checkbox" name="radio_building_area"
-                             value="не могу сказать">
-                      <span class="label">не могу сказать</span>
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
 
-                      <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
-                </ul>
               </div>
-
             </div>
-          </div>
 
-          <div class="slide">
-            <div class="quiz-stages quiz-stages__three">
-              <div class="title-quiz">Когда хотите установить дренаж?</div>
+            <div class="slide">
+              <div class="quiz-stages quiz-stages__three">
+                <div class="title-quiz">Когда хотите установить дренаж?</div>
 
-              <div class="quiz-stages__content scroll-block">
-                <ul class="list-checkbox">
-                  <li>
-                    <label class="checkbox radio">
+                <div class="quiz-stages__content scroll-block">
+                  <ul class="list-checkbox">
+                    <li>
+                      <label class="checkbox radio">
+                        <input class="checkbox-inp" type="radio" name="radio_date"
+                               value="ближайшее время">
+                        <span class="label">ближайшее время</span>
+
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
+
+                    <li><label class="checkbox radio">
                       <input class="checkbox-inp" type="radio" name="radio_date"
-                             value="ближайшее время">
-                      <span class="label">ближайшее время</span>
+                             value="1-3 месяца">
+                      <span class="label">1-3 месяца</span>
 
                       <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                    </label></li>
 
-                  <li><label class="checkbox radio">
-                    <input class="checkbox-inp" type="radio" name="radio_date"
-                           value="1-3 месяца">
-                    <span class="label">1-3 месяца</span>
+                    <li>
+                      <label class="checkbox radio">
+                        <input class="checkbox-inp" type="radio" name="radio_date"
+                               value="от 6 месяцев">
+                        <span class="label">от 6 месяцев</span>
 
-                    <span class="checkbox-custom"></span>
-                  </label></li>
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
 
-                  <li>
-                    <label class="checkbox radio">
-                      <input class="checkbox-inp" type="radio" name="radio_date"
-                             value="от 6 месяцев">
-                      <span class="label">от 6 месяцев</span>
+                    <li>
+                      <label class="checkbox radio">
+                        <input class="checkbox-inp" type="radio" name="radio_date"
+                               value="не могу сказать">
+                        <span class="label">не могу сказать</span>
 
-                      <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
 
-                  <li>
-                    <label class="checkbox radio">
-                      <input class="checkbox-inp" type="radio" name="radio_date"
-                             value="не могу сказать">
-                      <span class="label">не могу сказать</span>
+                  </ul>
+                </div>
 
-                      <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
-
-                </ul>
               </div>
-
             </div>
-          </div>
 
-          <div class="slide">
-            <div class="quiz-stages quiz-stages__four">
-              <div class="title-quiz">Нужна ли вам беспроцентная рассрочка от компании Юнид Эко?</div>
+            <div class="slide">
+              <div class="quiz-stages quiz-stages__four">
+                <div class="title-quiz">Нужна ли вам беспроцентная рассрочка от компании Юнид Эко?</div>
 
-              <div class="quiz-stages__content scroll-block">
-                <ul class="list-checkbox">
-                  <li>
-                    <label class="checkbox radio">
+                <div class="quiz-stages__content scroll-block">
+                  <ul class="list-checkbox">
+                    <li>
+                      <label class="checkbox radio">
+                        <input class="checkbox-inp" type="radio" name="radio_start"
+                               value="Да">
+                        <span class="label">Да</span>
+
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
+
+                    <li><label class="checkbox radio">
                       <input class="checkbox-inp" type="radio" name="radio_start"
-                             value="Да">
-                      <span class="label">Да</span>
-
+                             value="Нет">
+                      <span class="label">Нет</span>
                       <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                    </label></li>
+                  </ul>
+                </div>
 
-                  <li><label class="checkbox radio">
-                    <input class="checkbox-inp" type="radio" name="radio_start"
-                           value="Нет">
-                    <span class="label">Нет</span>
-                    <span class="checkbox-custom"></span>
-                  </label></li>
-                </ul>
               </div>
-
             </div>
-          </div>
 
-          <div class="slide">
-            <div class="quiz-stages quiz-stages__four">
-              <div class="title-quiz">Выберите способ получение расчета и проекта для работы</div>
+            <div class="slide">
+              <div class="quiz-stages quiz-stages__four">
+                <div class="title-quiz">Выберите способ получение расчета и проекта для работы</div>
 
-              <div class="quiz-stages__content scroll-block">
-                <ul class="list-checkbox list-checkbox-social list-gallery-checkbox">
-                  <li>
-                    <label class="checkbox radio">
+                <div class="quiz-stages__content scroll-block">
+                  <ul class="list-checkbox list-checkbox-social list-gallery-checkbox">
+                    <li>
+                      <label class="checkbox radio">
+                        <input class="checkbox-inp" type="radio" name="radio_social"
+                               value="Whatsapp">
+                        <span class="image"><img src="img/whatsapp-min.jpg" alt=""></span>
+                        <span class="label">Whatsapp</span>
+
+                        <span class="checkbox-custom"></span>
+                      </label>
+                    </li>
+
+                    <li><label class="checkbox radio">
                       <input class="checkbox-inp" type="radio" name="radio_social"
-                             value="Whatsapp">
-                      <span class="image"><img src="img/whatsapp-min.jpg" alt=""></span>
-                      <span class="label">Whatsapp</span>
+                             value="Viber">
+                      <span class="image"><img src="img/viber-min.jpg" alt=""></span>
+                      <span class="label">Viber</span>
 
                       <span class="checkbox-custom"></span>
-                    </label>
-                  </li>
+                    </label></li>
 
-                  <li><label class="checkbox radio">
-                    <input class="checkbox-inp" type="radio" name="radio_social"
-                           value="Viber">
-                    <span class="image"><img src="img/viber-min.jpg" alt=""></span>
-                    <span class="label">Viber</span>
+                    <li><label class="checkbox radio">
+                      <input class="checkbox-inp" type="radio" name="radio_social"
+                             value="Telegram">
+                      <span class="image"><img src="img/telegram-min.jpg" alt=""></span>
+                      <span class="label">Telegram</span>
 
-                    <span class="checkbox-custom"></span>
-                  </label></li>
+                      <span class="checkbox-custom"></span>
+                    </label></li>
 
-                  <li><label class="checkbox radio">
-                    <input class="checkbox-inp" type="radio" name="radio_social"
-                           value="Telegram">
-                    <span class="image"><img src="img/telegram-min.jpg" alt=""></span>
-                    <span class="label">Telegram</span>
+                    <li><label class="checkbox radio">
+                      <input class="checkbox-inp" type="radio" name="radio_social"
+                             value="По телефону">
+                      <span class="image"><img src="img/phone-min.jpg" alt=""></span>
+                      <span class="label">По телефону</span>
 
-                    <span class="checkbox-custom"></span>
-                  </label></li>
+                      <span class="checkbox-custom"></span>
+                    </label></li>
+                  </ul>
+                </div>
 
-                  <li><label class="checkbox radio">
-                    <input class="checkbox-inp" type="radio" name="radio_social"
-                           value="По телефону">
-                    <span class="image"><img src="img/phone-min.jpg" alt=""></span>
-                    <span class="label">По телефону</span>
-
-                    <span class="checkbox-custom"></span>
-                  </label></li>
-                </ul>
               </div>
+            </div>
 
+            <div class="slide">
+              <div class="quiz-stages quiz-stages__four">
+                <div class="title-quiz">Укажите номер телефона куда вам отправить результат?</div>
+
+                <div class="quiz-stages__content scroll-block">
+                  <ul class="list-checkbox">
+                    <li>
+                      <label>
+                        <span class="input-title">Номер телефона *</span>
+                        <input type="text" name="phone" required>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
             </div>
           </div>
-
-          <div class="slide">
-            <div class="quiz-stages quiz-stages__four">
-              <div class="title-quiz">Укажите номер телефона куда вам отправить результат?</div>
-
-              <div class="quiz-stages__content scroll-block">
-                <ul class="list-checkbox">
-                  <li>
-                    <label>
-                      <span class="input-title">Номер телефона *</span>
-                      <input type="text" name="phone" required>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-
-            </div>
+          <div class="form-quiz-nav">
+            <button type="submit" class="btn btn-accent btn-submit-quiz">Отправить</button>
+            <div class="suggestion-next"> или нажмите Enter</div>
           </div>
         </form>
 
-        <div class="form-quiz-nav">
-          <button type="submit" class="btn btn-accent btn-submit-quiz">Отправить</button>
-          <div class="suggestion-next"> или нажмите Enter</div>
-        </div>
+
       </div>
 
     </div>
@@ -983,6 +990,25 @@
             </tr>
             </tfoot>
           </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ваша заявка принята!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="box-text">
+          <p>Наш менеджер свяжется с вами в ближайшее время</p>
         </div>
       </div>
 

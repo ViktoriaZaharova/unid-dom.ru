@@ -24,8 +24,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -ms-flex-align: center;
+  align-items: center; }
 
 .menu-footer {
   font-size: 18px; }
@@ -54,19 +54,22 @@ footer {
   padding: 0 0 0 35px;
   font-size: 14px;
   line-height: 1.4; }
-  .footer-box__icon {
-    fill: #fff;
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    left: 0;
-    top: 0; }
-  .footer-box:last-child {
-    margin: 0; }
-  .footer-box h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 0 10px; }
+
+.footer-box__icon {
+  fill: #fff;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 0;
+  top: 0; }
+
+.footer-box:last-child {
+  margin: 0; }
+
+.footer-box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px; }
 
 .address {
   max-width: 250px; }
@@ -76,13 +79,13 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end; }
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
   .list-social li {
     margin: 0 12px 0 0; }
     .list-social li:last-child {
@@ -96,11 +99,11 @@ footer {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       fill: #fff;
       padding: 4px; }
 
@@ -123,7 +126,7 @@ footer {
 
 .modal-content {
   border: none;
-    border-radius: 3px;
+  border-radius: 3px;
   background: #fff;
   padding: 30px; }
   .modal-content .box-text {
@@ -139,7 +142,7 @@ footer {
 .modal-header {
   text-align: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0;
   border: none;
   margin: 0 0 30px; }
@@ -164,10 +167,10 @@ footer {
       height: 100%; }
     .modal-header .close:before {
       -webkit-transform: rotate(45deg);
-              transform: rotate(45deg); }
+      transform: rotate(45deg); }
     .modal-header .close:after {
       -webkit-transform: rotate(135deg);
-              transform: rotate(135deg); }
+      transform: rotate(135deg); }
 
 .modal-title {
   text-align: center;
@@ -195,8 +198,8 @@ footer {
   .table td, .table th {
     vertical-align: middle;
     padding: 10px; }
-    .table td:first-child, .table th:first-child {
-      width: 60%; }
+  .table td:first-child, .table th:first-child {
+    width: 60%; }
   .table thead {
     background: #1B1B1C;
     color: #fff;
@@ -204,7 +207,7 @@ footer {
     .table thead th {
       vertical-align: middle;
       border: none;
-        border-right: 1px solid #fff; }
+      border-right: 1px solid #fff; }
       .table thead th:last-child {
         border-right: none; }
   .table ul {
@@ -236,11 +239,11 @@ footer {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .timeline-wrapper {
   width: 100%;
@@ -251,8 +254,8 @@ footer {
 .percent-val {
   position: relative;
   color: #1B1B1C;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
+  width: -webkit-fit-content;
   width: fit-content;
   text-align: center;
   font-weight: 500;
@@ -274,24 +277,31 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 50px auto 0;
   width: 100%; }
+  .form-quiz-nav .btn, .form-quiz-nav .slick-arrow {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content; }
+  .form-quiz-nav .slick-prev {
+    width: 40px;
+    height: 40px; }
 
 .slick-arrow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 40px; }
 
 .btn-prev {
@@ -308,8 +318,8 @@ footer {
 
 .suggestion-next {
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
   padding-left: 20px;
   color: #000;
   opacity: .5; }
@@ -332,12 +342,12 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%; }
   .checkbox .label {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
+    width: -webkit-fit-content;
     width: fit-content; }
 
 .checkbox-inp {
@@ -348,23 +358,23 @@ footer {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
     background: url("../img/check.svg") no-repeat center;
-      background-size: 100%; }
+    background-size: 100%; }
 
 .checkbox-custom {
   width: 30px;
   height: 30px;
   min-width: 30px;
   border: 2px solid #1B1B1C;
-    border-radius: 2px;
+  border-radius: 2px;
   position: relative;
   margin: 0 10px 0 0;
   -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1; }
+  -ms-flex-order: -1;
+  order: -1; }
 
 .form-quiz__content {
   width: 100%;
@@ -386,18 +396,18 @@ footer {
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
       width: 100%;
       height: 400px; }
       .form-quiz__content .checkbox .image img {
         width: 100%;
         height: 100%;
         -o-object-fit: cover;
-           object-fit: cover; }
+        object-fit: cover; }
   .form-quiz__content .label-text {
     max-width: 300px;
     margin: 0 auto 20px; }
@@ -417,16 +427,16 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
+  -ms-flex-align: stretch;
+  align-items: stretch; }
   .list-gallery-checkbox li {
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     padding: 0 10px; }
   .list-gallery-checkbox .checkbox {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+    flex-wrap: wrap; }
     .list-gallery-checkbox .checkbox:hover .image {
       opacity: .8; }
     .list-gallery-checkbox .checkbox .image {
@@ -437,13 +447,13 @@ footer {
         left: 50%;
         top: calc(50% - 30px);
         -webkit-transform: translate(-50%, 50%);
-                transform: translate(-50%, 50%);
+        transform: translate(-50%, 50%);
         width: 40px;
         height: 40px;
         border: 2px solid #fff;
-          border-radius: 50%;
+        border-radius: 50%;
         background: url("../img/check-icon.svg") no-repeat center;
-          background-size: 80%;
+        background-size: 80%;
         opacity: 0;
         -webkit-transition: .3s ease;
         transition: .3s ease;
@@ -460,8 +470,11 @@ footer {
     text-align: center;
     margin: 10px auto 0; }
 
-.list-checkbox-social li .checkbox .image {
-  height: 269px; }
+.list-checkbox-social li {
+  min-width: 200px;
+  max-width: 200px; }
+  .list-checkbox-social li .checkbox .image {
+    height: 180px; }
 
 .title-quiz {
   text-align: center;

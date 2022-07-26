@@ -1,36 +1,40 @@
 @import "vars"
 
 /*==========  section home ==========*/
+
 .home
   background: url("../img/bg1.webp") no-repeat center
-    size: cover
+  background-size: cover
   color: #fff
   position: relative
   z-index: 1
   padding: 130px 0 100px
+
   &:before
     content: ''
     position: absolute
     z-index: -1
     opacity: 1
-    background: linear-gradient(to bottom,#000 0,rgba(0,0,0,.63) 15%,transparent 105%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #000), color-stop(15%, rgba(0, 0, 0, 0.63)), color-stop(105%, transparent))
+    background: linear-gradient(to bottom, #000 0, rgba(0, 0, 0, 0.63) 15%, transparent 105%)
     width: 100%
     height: 100%
     left: 0
     top: 0
-
 
 .home-content
   padding: 30px
   width: 100%
   border-radius: 20px
   background: rgba(0, 0, 0, 0.54)
+  -webkit-box-shadow: 0 0 25px #000000
   box-shadow: 0 0 25px #000000
+
   p
     font-size: 22px
+
   .btn
     margin: 40px 0 auto 40px
-
 
 .description-text
   margin: 20px 0
@@ -38,62 +42,72 @@
 
 .percent
   text-transform: uppercase
-  color: $accent
+  color: #F06E28
   position: absolute
   right: 30px
   bottom: 60px
   font-size: 25px
   font-weight: 600
+
   &:hover
     color: #fff
 
 /*==========  section home end  ==========*/
-
-
 /*==========  section about-product ==========*/
+
 .about-product
   padding: 120px 0 100px
 
 .about-product__img
   width: 100%
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
   justify-content: center
   margin: 50px 0 0
   overflow: hidden
+
   img
     width: 100%
+    -webkit-transition: 1s ease
     transition: 1s ease
-  &:hover
-    img
-      transform: scale(1.05, 1.05)
+
+  &:hover img
+    -webkit-transform: scale(1.05, 1.05)
+    transform: scale(1.05, 1.05)
 
 .about-product-box
   font-size: 18px
   margin: 40px 0 0
+
   h3
     font-weight: bold
     padding: 0 0 10px
+    width: -moz-fit-content
     width: fit-content
     font-size: 22px
     margin: 0 0 20px
-    border-bottom: 2px solid $accent
+    border-bottom: 2px solid #F06E28
+
   .box-text
     max-width: 400px
 
-
 /*==========  section about-product end  ==========*/
-
-
-
 /*==========  section callback-prices ==========*/
+
 .callback-prices
   padding: 30px 0 40px
   background: url("../img/bg2.webp") no-repeat center
-    size: cover
+  background-size: cover
   color: #fff
   position: relative
   z-index: 1
+
   &:before
     content: ''
     position: absolute
@@ -103,33 +117,41 @@
     height: 100%
     opacity: .52
     background: #0c0f14
+
   .btn
     margin: 30px auto 0
+
   h2
     font-size: 32px
+
 /*==========  section callback-prices end  ==========*/
-
-
-
 /*==========  section advantages-product ==========*/
+
 .advantages-product-wrapper
   text-align: center
+
   h3
     font-size: 30px
     font-weight: bold
     margin: 0 auto 20px
     text-align: center
+
     span
       display: block
+
   ul
+    width: -moz-fit-content
     width: fit-content
     margin: 0 auto 30px
     font-size: 18px
     text-align: left
+
     li
       margin: 0 0 10px
+
       &:last-child
         margin: 0
+
   h4
     font-size: 24px
     text-align: center
@@ -137,59 +159,78 @@
     font-weight: bold
 
 .img-icon
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
   justify-content: center
   margin: 30px auto 0
 
-.advantages-product
-  h2
-    font-size: 40px
-    margin: 0 0 45px
+.advantages-product h2
+  font-size: 40px
+  margin: 0 0 45px
 
 .question-wrapper
   max-width: 450px
   margin: 0 auto
 
-.accordion
-  .card
-    border-radius: 0
-    border: none
-      top: 1px solid #DDDDDD
+.accordion .card
+  border-radius: 0
+  border: none
+  border-top: 1px solid #DDDDDD
 
 .card-header
   background: transparent
   padding: 20px 0
   font-weight: bold
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
   justify-content: space-between
   cursor: pointer
   font-size: 18px
   border: none
 
-.collapsed .accordion-icon
-  &:after
-    display: block
+.collapsed .accordion-icon:after
+  display: block
 
 .accordion-icon
   position: relative
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
   justify-content: center
   width: 18px
   height: 18px
   min-width: 18px
+
   &:before, &:after
     content: ''
     position: absolute
-    background: $black
+    background: #1B1B1C
     top: 50%
     left: 50%
-    transform: translate(-50%,-50%)
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+
   &:before
     width: 100%
     height: 2px
+
   &:after
     width: 2px
     height: 100%
@@ -197,69 +238,53 @@
 
 .card-body
   padding: 0 0 20px
+
 /*==========  section advantages-product end  ==========*/
 
 
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-
-/*==========  section  ==========*/
-
-/*==========  section end  ==========*/
-
-
-/*==========  section works ==========*/
 .works-box
   width: 100%
   text-align: center
-  &__name
-    font-weight: bold
-    font-size: 22px
-    line-height: 1.37
-    margin: 10px 0 0
 
-//.works-box-images
-//  height: 210px !important
-//
-
+.works-box__name
+  font-weight: bold
+  font-size: 22px
+  line-height: 1.37
+  margin: 10px 0 0
 
 .twentytwenty-overlay:hover
   background: transparent
 
-.twentytwenty-after-label, .twentytwenty-before-label
+.twentytwenty-after-label
   opacity: 1
 
-.twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-before-label:before
+.twentytwenty-before-label
+  opacity: 1
+
+  &:before
+    left: 30px
+
+.twentytwenty-horizontal .twentytwenty-before-label:before
   left: 30px
 
-.twentytwenty-after-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before
+.twentytwenty-after-label:before
   right: 30px
 
-.twentytwenty-horizontal .twentytwenty-before-label:before, .twentytwenty-horizontal .twentytwenty-after-label:before
-  top: auto
-  bottom: 30px
-  padding: 0
-  margin: 0
-  background: transparent
-  font-size: 18px
-  font-weight: 700
-  line-height: 1.37
-  font-family: $default-font
-  letter-spacing: 0
+.twentytwenty-horizontal
+  .twentytwenty-after-label:before
+    right: 30px
+
+  .twentytwenty-before-label:before, .twentytwenty-after-label:before
+    top: auto
+    bottom: 30px
+    padding: 0
+    margin: 0
+    background: transparent
+    font-size: 18px
+    font-weight: 700
+    line-height: 1.37
+    font-family: "Roboto", sans-serif
+    letter-spacing: 0
 
 .twentytwenty-handle
   width: 24px
@@ -268,14 +293,16 @@
   margin-top: -14px
   margin-left: -13px
 
-.twentytwenty-horizontal .twentytwenty-handle:before, .twentytwenty-horizontal .twentytwenty-handle:after
-  width: 2px
+.twentytwenty-horizontal .twentytwenty-handle
+  &:before
+    width: 2px
 
-.twentytwenty-horizontal .twentytwenty-handle:after
-  margin-top: 18px
+  &:after
+    width: 2px
+    margin-top: 18px
 
-.twentytwenty-horizontal .twentytwenty-handle:before
-  margin-bottom: 18px
+  &:before
+    margin-bottom: 18px
 
 .twentytwenty-left-arrow
   border-right-width: 4px
@@ -288,6 +315,7 @@
 .video-wrapper
   margin: 60px 0 0
   width: 100%
+
   h3
     font-size: 34px
     width: 100%
@@ -299,6 +327,7 @@
   width: 100%
   padding-bottom: 56.25%
   position: relative
+
   iframe
     display: block
     position: absolute
@@ -308,22 +337,23 @@
     height: 100%
 
 /*==========  section works end  ==========*/
-
-
-
 /*==========  section book-departure ==========*/
+
 .book-departure
   position: relative
   background: url("../img/bg4.webp") no-repeat center
-    size: cover
+  background-size: cover
   z-index: 1
   padding: 40px 0 10px
+
   h2
     font-size: 34px
     font-weight: normal
     margin: 0 auto 50px
+
     span
       display: block
+
   &:before
     content: ''
     position: absolute
@@ -332,13 +362,18 @@
     width: 100%
     height: 100%
     z-index: -1
-    background: linear-gradient(to bottom,#fafafa 0,rgba(250,250,250,.76) 50%,transparent 105%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(50%, rgba(250, 250, 250, 0.76)), color-stop(105%, transparent))
+    background: linear-gradient(to bottom, #fafafa 0, rgba(250, 250, 250, 0.76) 50%, transparent 105%)
+
   .warranty-content
     padding: 50px
+
     ul
       font-size: 25px
+
       li
         margin: 0 0 10px
+
     h3
       margin: 0 0 20px
       font-weight: bold
@@ -350,54 +385,57 @@
   padding: 30px 30px 40px
   border-radius: 5px
   max-width: 400px
+
   h3
     font-size: 32px
     margin: 0 0 20px
     line-height: 1.5
 
-.form
-  button
-    width: 100%
+.form button
+  width: 100%
 
 /*==========  section book-departure end  ==========*/
-
-
 /*==========  section book-departure-v2 ==========*/
+
 .book-departure-v2
   background: url("../img/bg3.webp") no-repeat center
-    size: cover
+  background-size: cover
+
   h2
     margin: 0 auto 20px
+
   h5
     font-size: 18px
     font-weight: 700
     padding: 10px 0 20px
     position: relative
     margin: 0 auto 30px
+
     &:before
       content: ''
       position: absolute
       left: 50%
-      transform: translate(-50%,0)
+      -webkit-transform: translate(-50%, 0)
+      transform: translate(-50%, 0)
       bottom: 0
-      background: $black
+      background: #1B1B1C
       width: 30px
       height: 1px
+
   .box-text
     margin: 0 auto 70px
     max-width: 1050px
-  .call-box
-    h3
-      font-size: 20px
-      text-align: center
 
+  .call-box h3
+    font-size: 20px
+    text-align: center
 
 /*==========  section book-departure-v2 end ==========*/
-
-
 /*==========  section projects ==========*/
+
 .projects
   padding: 70px 0 20px
+
   h3
     font-size: 22px
     line-height: 1.37
@@ -409,87 +447,120 @@
   height: 100%
   text-align: center
   background: #fff
-  &__img
+
+.projects-box__img
+  width: 100%
+  height: 247px
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  overflow: hidden
+
+  img
     width: 100%
-    height: 247px
-    display: flex
-    align-items: center
-    justify-content: center
-    overflow: hidden
-    img
-      width: 100%
-      height: 100%
-      object-fit: cover
-      transition: 1s ease
-    &:hover
-      img
-        transform: scale(1.05, 1.05)
-  &__body
-    padding: 10px 30px 40px
+    height: 100%
+    -o-object-fit: cover
+    object-fit: cover
+    -webkit-transition: 1s ease
+    transition: 1s ease
+
+  &:hover img
+    -webkit-transform: scale(1.05, 1.05)
+    transform: scale(1.05, 1.05)
+
+.projects-box__body
+  padding: 10px 30px 40px
+
+.projects-box
   .btn
     margin: 30px auto 0
+
   h4
     font-weight: 700
     font-size: 22px
     margin: 0 auto 20px
-  .box-text
-    p
-      margin: 0 0 10px
-      &:last-child
-        margin: 0
+
+  .box-text p
+    margin: 0 0 10px
+
+    &:last-child
+      margin: 0
 
 /*==========  section projects end  ==========*/
-
-
-
 /*==========  section reviews ==========*/
-.reviews
-  h2
-    margin: 0 auto 50px
+
+.reviews h2
+  margin: 0 auto 50px
 
 .reviews-box
   padding: 30px
-  background: $black
+  background: #1B1B1C
   color: #fff
   width: 100%
   height: 100%
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -ms-flex-direction: column
   flex-direction: column
-  &__content
-    margin: 0 0 40px
-  &__footer
-    display: flex
-    align-items: center
-    margin: auto 0 0
-  &__avatar
-    border-radius: 50%
-    display: flex
-    align-items: center
-    justify-content: center
-    overflow: hidden
-    width: 60px
-    height: 60px
-    min-width: 60px
-    margin: 0 10px 0 0
-  h4
-    font-size: 18px
-    font-weight: bold
 
+.reviews-box__content
+  margin: 0 0 40px
+
+.reviews-box__footer
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  margin: auto 0 0
+
+.reviews-box__avatar
+  border-radius: 50%
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  overflow: hidden
+  width: 60px
+  height: 60px
+  min-width: 60px
+  margin: 0 10px 0 0
+
+.reviews-box h4
+  font-size: 18px
+  font-weight: bold
 
 .bg-grey
   background: #f5f5f5
-  color: $black
+  color: #1B1B1C
 
 .btn-all
   margin: 40px auto 0
-/*==========  section reviews end  ==========*/
 
+/*==========  section reviews end  ==========*/
 /*==========  section warranty ==========*/
+
 .warranty
   background: url("../img/bg5.webp") no-repeat center
-    size: cover
+  background-size: cover
   position: relative
   z-index: 1
+
   &:before
     content: ''
     position: absolute
@@ -499,6 +570,7 @@
     height: 100%
     background: #F5F5F5
     opacity: .90
+
   h2
     font-size: 25px
     line-height: 1.37
@@ -510,18 +582,22 @@
   padding: 30px
 
 .warranty-image
+  display: -webkit-box
+  display: -ms-flexbox
   display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
   align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
   justify-content: center
 
-
 /*==========  section warranty end  ==========*/
-
-
-
 /*==========  section payment-service ==========*/
+
 .payment-service
   padding: 70px 0 10px
+
   h3
     font-size: 22px
     line-height: 1.37
@@ -532,34 +608,43 @@
   width: 100%
   text-align: center
   min-height: 270px
-  &__icon
-    padding: 15px
-    border-radius: 50%
-    display: flex
-    align-items: center
-    justify-content: center
-    margin: 0 auto
-    width: 80px
-    height: 80px
-    background: $black
+
+.payment-service-box__icon
+  padding: 15px
+  border-radius: 50%
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  margin: 0 auto
+  width: 80px
+  height: 80px
+  background: #1B1B1C
+
+.payment-service-box
   h4
     font-weight: bold
     margin: 20px auto 30px
     font-size: 22px
+
   a
     display: inline-block
 
 /*==========  section payment-service end  ==========*/
-
-
-
 /*==========  section advantages ==========*/
+
 .advantages
   position: relative
   background: url("../img/bg5.webp") no-repeat center
-    size: cover
+  background-size: cover
   z-index: 1
   padding: 70px 0 30px
+
   &:before
     content: ''
     position: absolute
@@ -577,72 +662,91 @@
   padding: 30px 30px 60px
   text-align: center
   min-height: 420px
-  &__icon
-    display: flex
-    align-items: center
-    justify-content: center
-    margin: 0 auto 20px
-    max-width: 100px
-    width: 100%
+
+.advantages-box__icon
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  margin: 0 auto 20px
+  max-width: 100px
+  width: 100%
+
+.advantages-box
   h3
     font-weight: bold
     font-size: 22px
     line-height: 1.37
     min-height: 80px
+
   .box-text
     padding: 20px 0 0
     width: 100%
     border-top: 1px solid #E9E9E9
 
-
 /*==========  section advantages end  ==========*/
-
-
-
 /*==========  section why-company ==========*/
-.why-company
-  h2
-    margin: 0 auto 20px
+
+.why-company h2
+  margin: 0 auto 20px
 
 .why-company-box
   text-align: center
   margin: 45px 0 0
+
   .box-text
     color: #878788
+
   h3
     font-size: 22px
     font-weight: bold
     line-height: 1.37
     margin: 0 auto 20px
-  &__number
-    display: flex
-    align-items: center
-    justify-content: center
-    color: #fff
-    background: #545455
-    margin: 0 auto 30px
-    width: 60px
-    height: 60px
-    border-radius: 50%
-    font-size: 30px
-    font-weight: bold
+
+.why-company-box__number
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  color: #fff
+  background: #545455
+  margin: 0 auto 30px
+  width: 60px
+  height: 60px
+  border-radius: 50%
+  font-size: 30px
+  font-weight: bold
 
 /*==========  section why-company end  ==========*/
-
 /*==========  section contacts ==========*/
+
 .contacts
   padding: 60px 0
+
   .box-text
     font-size: 22px
     margin: 0 0 30px
+
   .list-social
+    -webkit-box-pack: start
+    -ms-flex-pack: start
     justify-content: flex-start
     margin: 30px 0 50px
-    li
-      a
-        width: 24px
-        height: 24px
-        //fill: #1b1b1c
+
+    li a
+      width: 24px
+      height: 24px
+
   .document-text
     font-size: 18px
     line-height: 1.5
@@ -654,33 +758,34 @@
 
 .contacts-box
   padding: 20px 0
-  border:
-    top: 1px solid #E9E9E9
-    bottom: 1px solid #E9E9E9
+  border-top: 1px solid #E9E9E9
+  border-bottom: 1px solid #E9E9E9
   margin: 0 0 -1px
-
 
 .map
   width: 100%
   height: 100%
+
   iframe
     width: 100%
     height: 100%
+
 /*==========  section contacts end  ==========*/
-
-
 /*==========  section installment-plan ==========*/
+
 .installment-plan
   position: relative
   padding: 80px 0 110px
+
   &:before
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
     background: url("../img/bg6.webp") no-repeat center
-      size: cover
+    background-size: cover
     opacity: .15
     width: 100%
     height: 100%
@@ -690,16 +795,19 @@
     font-size: 20px
     max-width: 700px
     margin: 0 auto 50px
+
     strong
       display: inline
+
   .btn
     margin: 0 auto
+
 /*==========  section installment-plan end  ==========*/
-
-
 /*==========  section thanks  ==========*/
+
 .thanks
   margin: 80px 0 0
+
   h2
     margin: 0 0 40px
 
@@ -708,11 +816,14 @@
     margin: 0 0 30px
     font-weight: bold
     font-size: 20px
+
   ul
     li
       margin: 0 0 10px
+
       &:last-child
         margin: 0
+
     p
       font-weight: bold
 
@@ -720,18 +831,41 @@
   padding: 50px 0
   margin: 80px 0 0
   background: #f5f5f5
+
   h3
     font-size: 24px
     margin: 0 auto 40px
     text-align: center
-  .form
+
+  .form-number-change
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
+    -webkit-box-align: start
+    -ms-flex-align: start
     align-items: flex-start
+    -webkit-box-pack: center
+    -ms-flex-pack: center
     justify-content: center
+    -ms-flex-wrap: wrap
     flex-wrap: wrap
+
     label
       margin: 0 20px 0 0
       max-width: 300px
+
     button
       max-width: 200px
+
 /*==========  section thanks end  ==========*/
+
+.modal-open
+  overflow: hidden
+  height: 100vh
+  width: 100vw
+
+div#quizModal
+  padding: 0px !important
+
+.modal-body
+  max-height: calc(100vh - 200px)

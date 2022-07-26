@@ -24,7 +24,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -71,31 +75,30 @@ a {
 input, textarea, select {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: 0 12px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   border: 1px solid rgba(27, 27, 28, 0.15);
-    border-radius: 5px;
+  border-radius: 5px;
   width: 100%;
   height: 47px;
   color: #1b1b1c; }
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
-    color: #1b1b1c; }
-  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
-    color: #1b1b1c; }
-  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
-    color: #1b1b1c; }
-  input::placeholder, textarea::placeholder, select::placeholder {
-    color: #1b1b1c; }
-  input:hover, textarea:hover, select:hover {
-    outline: none;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  color: #1b1b1c; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, input::placeholder, textarea::placeholder, select::placeholder {
+  color: #1b1b1c; }
+
+input:hover, textarea:hover, select:hover {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
 .input-title {
   display: block;
@@ -115,31 +118,36 @@ button, .btn {
   transition: .3s ease;
   cursor: pointer;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   border: none;
-    border-radius: 5px; }
-  button:hover, button:focus, .btn:hover, .btn:focus {
-    outline: none;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+  border-radius: 5px; }
+
+button:hover, button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   padding: 11px 22px;
   font-weight: 500;
   border-radius: 4px; }
+  .btn:hover, .btn:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
 
 .btn-lg {
   padding: 16px 30px; }
@@ -168,7 +176,7 @@ button, .btn {
   left: 50%;
   bottom: 0;
   -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
   z-index: 3;
   text-transform: uppercase; }
 
@@ -271,7 +279,7 @@ h2 {
     width: 15px;
     height: 15px;
     background: url("../img/check.svg") no-repeat center;
-      background-size: 100%; }
+    background-size: 100%; }
 
 .text-decoration {
   text-decoration: underline; }

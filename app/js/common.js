@@ -121,3 +121,19 @@ $(".form").submit(function () {
     });
     return false;
 });
+
+
+$(".form-number-change").submit(function () {
+    $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()
+    }).done(function () {
+        $(this).find("input").val("");
+
+        // $('.modal-backdrop').addClass('show');
+        $('#thanksModal').modal('show');
+        $(".form-number-change").trigger("reset");
+    });
+    return false;
+});
